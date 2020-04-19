@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title3 default 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Graphik-Medium",
+        "fontSize": 20,
+        "fontWeight": "500",
+        "lineHeight": 28,
+      },
+      Object {
+        "color": "#071422",
+        "lineHeight": 28,
+        "textAlign": undefined,
+      },
+      Object {
+        "paddingBottom": 16,
+      },
+      Object {},
+      Object {},
+    ]
+  }
+>
+  Hey, lil 🐛
+</Text>
+`;

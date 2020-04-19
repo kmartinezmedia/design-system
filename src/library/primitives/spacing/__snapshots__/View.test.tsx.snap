@@ -1,0 +1,379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`View dangerouslySetStyle 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "alignSelf": "auto",
+      "backgroundColor": "red",
+      "flexDirection": "column",
+      "flexGrow": undefined,
+      "flexShrink": undefined,
+      "flexWrap": "nowrap",
+      "height": undefined,
+      "justifyContent": "flex-start",
+      "width": undefined,
+    }
+  }
+/>
+`;
+
+exports[`View default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "alignSelf": "auto",
+      "flexDirection": "column",
+      "flexGrow": undefined,
+      "flexShrink": undefined,
+      "flexWrap": "nowrap",
+      "height": undefined,
+      "justifyContent": "flex-start",
+      "width": undefined,
+    }
+  }
+/>
+`;
+
+exports[`View elevation 1`] = `
+Array [
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "borderColor": "#F1F3F5",
+        "borderWidth": 1,
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "shadowColor": "#071422",
+        "shadowOffset": Object {
+          "height": 8,
+          "width": 0,
+        },
+        "shadowOpacity": 0.02,
+        "shadowRadius": 12,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "borderColor": "#F1F3F5",
+        "borderWidth": 1,
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "shadowColor": "#071422",
+        "shadowOffset": Object {
+          "height": 8,
+          "width": 0,
+        },
+        "shadowOpacity": 0.24,
+        "shadowRadius": 40,
+        "width": undefined,
+      }
+    }
+  />,
+]
+`;
+
+exports[`View pin 1`] = `
+Array [
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "bottom": 0,
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "bottom": 0,
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "bottom": 0,
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "width": undefined,
+      }
+    }
+  />,
+]
+`;
+
+exports[`View spacing 1`] = `
+Array [
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "padding": 24,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "padding": 0,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "padding": 24,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 16,
+        "paddingVertical": 0,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "marginHorizontal": -16,
+        "paddingBottom": 16,
+        "paddingTop": 0,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "marginRight": -16,
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingTop": 0,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "paddingTop": 16,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 16,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "marginBottom": -12,
+        "paddingHorizontal": 16,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 16,
+        "paddingVertical": 12,
+        "width": undefined,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "marginRight": -24,
+        "paddingBottom": 12,
+        "paddingLeft": 0,
+        "paddingTop": 16,
+        "width": undefined,
+      }
+    }
+  />,
+]
+`;

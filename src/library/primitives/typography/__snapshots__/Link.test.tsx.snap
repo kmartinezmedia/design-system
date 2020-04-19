@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link default 1`] = `
+<Text
+  style={
+    Array [
+      Object {},
+      Object {
+        "color": "#1652F0",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      Object {},
+      Object {},
+      Object {},
+    ]
+  }
+>
+  Hey, lil 🐛
+</Text>
+`;

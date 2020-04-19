@@ -1,0 +1,316 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text align 1`] = `
+Array [
+  <Text
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#071422",
+          "lineHeight": undefined,
+          "textAlign": "left",
+        },
+        Object {},
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+  <Text
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#071422",
+          "lineHeight": undefined,
+          "textAlign": "center",
+        },
+        Object {},
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+  <Text
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#071422",
+          "lineHeight": undefined,
+          "textAlign": "right",
+        },
+        Object {},
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+]
+`;
+
+exports[`Text color 1`] = `
+Array [
+  <Text
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#071422",
+          "lineHeight": undefined,
+          "textAlign": undefined,
+        },
+        Object {},
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+  <Text
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#E5212E",
+          "lineHeight": undefined,
+          "textAlign": undefined,
+        },
+        Object {},
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+  <Text
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#FF9900",
+          "lineHeight": undefined,
+          "textAlign": undefined,
+        },
+        Object {},
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+  <Text
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#00A45F",
+          "lineHeight": undefined,
+          "textAlign": undefined,
+        },
+        Object {},
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+  <Text
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#1652F0",
+          "lineHeight": undefined,
+          "textAlign": undefined,
+        },
+        Object {},
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+  <Text
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#587088",
+          "lineHeight": undefined,
+          "textAlign": undefined,
+        },
+        Object {},
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+]
+`;
+
+exports[`Text default 1`] = `
+<Text
+  style={
+    Array [
+      Object {},
+      Object {
+        "color": "#071422",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      Object {},
+      Object {},
+      Object {},
+    ]
+  }
+>
+  Hey, lil 🐛
+</Text>
+`;
+
+exports[`Text ellipsize 1`] = `
+Array [
+  <Text
+    ellipsizeMode="clip"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#071422",
+          "lineHeight": undefined,
+          "textAlign": undefined,
+        },
+        Object {},
+        Object {},
+        Object {
+          "overflow": "hidden",
+        },
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+  <Text
+    ellipsizeMode="head"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#071422",
+          "lineHeight": undefined,
+          "textAlign": undefined,
+        },
+        Object {},
+        Object {},
+        Object {
+          "overflow": "hidden",
+        },
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+  <Text
+    ellipsizeMode="middle"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#071422",
+          "lineHeight": undefined,
+          "textAlign": undefined,
+        },
+        Object {},
+        Object {},
+        Object {
+          "overflow": "hidden",
+        },
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+  <Text
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {},
+        Object {
+          "color": "#071422",
+          "lineHeight": undefined,
+          "textAlign": undefined,
+        },
+        Object {},
+        Object {},
+        Object {
+          "overflow": "hidden",
+        },
+      ]
+    }
+  >
+    Hey, lil 🐛
+  </Text>,
+]
+`;
+
+exports[`Text lineheight 1`] = `
+<Text
+  style={
+    Array [
+      Object {},
+      Object {
+        "color": "#071422",
+        "lineHeight": 1,
+        "textAlign": undefined,
+      },
+      Object {},
+      Object {},
+      Object {},
+    ]
+  }
+>
+  Hey, lil 🐛
+</Text>
+`;
+
+exports[`Text spacing 1`] = `
+<Text
+  style={
+    Array [
+      Object {},
+      Object {
+        "color": "#071422",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      Object {
+        "paddingHorizontal": 12,
+        "paddingTop": 8,
+      },
+      Object {},
+      Object {},
+    ]
+  }
+>
+  Hey, lil 🐛
+</Text>
+`;

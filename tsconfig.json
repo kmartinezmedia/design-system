@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "paths": {
+      "@designSystem": ["./library/index.ts" ],
+      "@designSystem/*": [
+        "./library/*"
+      ],
+      "@app/*": [
+        "app/*"
+      ]
+    },
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./dist",
+    "jsx": "react",
+    "target": "esnext",
+    "lib": [
+      "es6"
+    ],
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "types": [
+      "jest",
+      "node"
+    ],
+    "plugins": [
+      {
+        "transform": "@zerollup/ts-transform-paths"
+      }
+    ],
+    "emitDeclarationOnly": true
+  },
+  "include": [
+    "src/**/*",
+    "support/**/*"
+  ],
+  "exclude": [
+    "node_modules/**"
+  ]
+}

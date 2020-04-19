@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VStack default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "alignSelf": "auto",
+      "flexDirection": "column",
+      "flexGrow": undefined,
+      "flexShrink": undefined,
+      "flexWrap": "nowrap",
+      "height": undefined,
+      "justifyContent": "flex-start",
+      "padding": 16,
+      "width": undefined,
+    }
+  }
+/>
+`;

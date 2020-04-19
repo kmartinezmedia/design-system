@@ -1,0 +1,1333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListCell children 1`] = `
+<TouchableWithoutFeedback
+  onPress={[Function]}
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "auto",
+        "flexDirection": "row",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "paddingVertical": 16,
+        "width": undefined,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        🤔
+      </Text>
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 13,
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "textAlign": undefined,
+            },
+            Object {
+              "paddingBottom": 4,
+            },
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        Sure.
+      </Text>
+    </View>
+    <View />
+    <View
+      minWidth="20%"
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {},
+          ]
+        }
+      >
+        $1mil
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 13,
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "textAlign": undefined,
+            },
+            Object {
+              "paddingBottom": 4,
+            },
+            Object {},
+            Object {},
+          ]
+        }
+      >
+        btc
+      </Text>
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`ListCell default 1`] = `
+<TouchableWithoutFeedback
+  onPress={[Function]}
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "auto",
+        "flexDirection": "row",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "paddingVertical": 16,
+        "width": undefined,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        🤔
+      </Text>
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`ListCell elipsize 1`] = `
+<TouchableWithoutFeedback
+  onPress={[Function]}
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "auto",
+        "flexDirection": "row",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "paddingVertical": 16,
+        "width": undefined,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="clip"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        🤔
+      </Text>
+      <Text
+        ellipsizeMode="clip"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 13,
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "textAlign": undefined,
+            },
+            Object {
+              "paddingBottom": 4,
+            },
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        Sure.
+      </Text>
+      <BVLinearGradient
+        colors={
+          Array [
+            16777215,
+            4294967295,
+          ]
+        }
+        endPoint={
+          Object {
+            "x": 1,
+            "y": 0,
+          }
+        }
+        locations={null}
+        startPoint={
+          Object {
+            "x": 0,
+            "y": 0,
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 30,
+          }
+        }
+      />
+    </View>
+    <View
+      minWidth="20%"
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {},
+          ]
+        }
+      >
+        $1mil
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 13,
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "textAlign": undefined,
+            },
+            Object {
+              "paddingBottom": 4,
+            },
+            Object {},
+            Object {},
+          ]
+        }
+      >
+        btc
+      </Text>
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`ListCell marker 1`] = `
+<TouchableWithoutFeedback
+  onPress={[Function]}
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "auto",
+        "flexDirection": "row",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "paddingVertical": 16,
+        "width": undefined,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        🤔
+      </Text>
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 13,
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "textAlign": undefined,
+            },
+            Object {
+              "paddingBottom": 4,
+            },
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        Sure.
+      </Text>
+    </View>
+    <View
+      minWidth="20%"
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {},
+          ]
+        }
+      >
+        $1mil
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 13,
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "textAlign": undefined,
+            },
+            Object {
+              "paddingBottom": 4,
+            },
+            Object {},
+            Object {},
+          ]
+        }
+      >
+        btc
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "paddingLeft": 16,
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#1652F0",
+            "fontFamily": "CoinbaseIcons",
+            "fontSize": 32,
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`ListCell subtitle 1`] = `
+<TouchableWithoutFeedback
+  onPress={[Function]}
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "auto",
+        "flexDirection": "row",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "paddingVertical": 16,
+        "width": undefined,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        🤔
+      </Text>
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 13,
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "textAlign": undefined,
+            },
+            Object {
+              "paddingBottom": 4,
+            },
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        Sure.
+      </Text>
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`ListCell tertiary 1`] = `
+<TouchableWithoutFeedback
+  onPress={[Function]}
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "auto",
+        "flexDirection": "row",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "paddingVertical": 16,
+        "width": undefined,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        🤔
+      </Text>
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 13,
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "textAlign": undefined,
+            },
+            Object {
+              "paddingBottom": 4,
+            },
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        Sure.
+      </Text>
+    </View>
+    <View
+      minWidth="20%"
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {},
+          ]
+        }
+      >
+        $1mil
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 13,
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "textAlign": undefined,
+            },
+            Object {
+              "paddingBottom": 4,
+            },
+            Object {},
+            Object {},
+          ]
+        }
+      >
+        btc
+      </Text>
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`ListCell value 1`] = `
+<TouchableWithoutFeedback
+  onPress={[Function]}
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "auto",
+        "flexDirection": "row",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "paddingVertical": 16,
+        "width": undefined,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        🤔
+      </Text>
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 13,
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "textAlign": undefined,
+            },
+            Object {
+              "paddingBottom": 4,
+            },
+            Object {},
+            Object {
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        Sure.
+      </Text>
+    </View>
+    <View
+      minWidth="20%"
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Graphik-Regular",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#071422",
+              "lineHeight": 24,
+              "textAlign": undefined,
+            },
+            Object {},
+            Object {},
+            Object {},
+          ]
+        }
+      >
+        $1mil
+      </Text>
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`ListCell variant 1`] = `
+Array [
+  <TouchableWithoutFeedback
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "auto",
+          "flexDirection": "row",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "paddingHorizontal": 24,
+          "paddingVertical": 16,
+          "width": undefined,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Regular",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 24,
+              },
+              Object {
+                "color": "#071422",
+                "lineHeight": 24,
+                "textAlign": undefined,
+              },
+              Object {},
+              Object {},
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          🤔
+        </Text>
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Regular",
+                "fontSize": 13,
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+              Object {
+                "color": "#587088",
+                "lineHeight": 16,
+                "textAlign": undefined,
+              },
+              Object {
+                "paddingBottom": 4,
+              },
+              Object {},
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          Sure.
+        </Text>
+      </View>
+      <View
+        minWidth="20%"
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": undefined,
+            "flexShrink": undefined,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Regular",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 24,
+              },
+              Object {
+                "color": "#071422",
+                "lineHeight": 24,
+                "textAlign": undefined,
+              },
+              Object {},
+              Object {},
+              Object {},
+            ]
+          }
+        >
+          $1mil
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Regular",
+                "fontSize": 13,
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+              Object {
+                "color": "#587088",
+                "lineHeight": 16,
+                "textAlign": undefined,
+              },
+              Object {
+                "paddingBottom": 4,
+              },
+              Object {},
+              Object {},
+            ]
+          }
+        >
+          btc
+        </Text>
+      </View>
+    </View>
+  </TouchableWithoutFeedback>,
+  ",",
+  <TouchableWithoutFeedback
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "auto",
+          "flexDirection": "row",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "paddingHorizontal": 24,
+          "paddingVertical": 16,
+          "width": undefined,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Regular",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 24,
+              },
+              Object {
+                "color": "#071422",
+                "lineHeight": 24,
+                "textAlign": undefined,
+              },
+              Object {},
+              Object {},
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          🤔
+        </Text>
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Regular",
+                "fontSize": 13,
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+              Object {
+                "color": "#587088",
+                "lineHeight": 16,
+                "textAlign": undefined,
+              },
+              Object {
+                "paddingBottom": 4,
+              },
+              Object {},
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          Sure.
+        </Text>
+      </View>
+      <View
+        minWidth="20%"
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": undefined,
+            "flexShrink": undefined,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Regular",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 24,
+              },
+              Object {
+                "color": "#071422",
+                "lineHeight": 24,
+                "textAlign": undefined,
+              },
+              Object {},
+              Object {},
+              Object {},
+            ]
+          }
+        >
+          $1mil
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Regular",
+                "fontSize": 13,
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+              Object {
+                "color": "#587088",
+                "lineHeight": 16,
+                "textAlign": undefined,
+              },
+              Object {
+                "paddingBottom": 4,
+              },
+              Object {},
+              Object {},
+            ]
+          }
+        >
+          btc
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": undefined,
+            "flexShrink": undefined,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "paddingLeft": 16,
+            "width": undefined,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#1652F0",
+              "fontFamily": "CoinbaseIcons",
+              "fontSize": 32,
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+  </TouchableWithoutFeedback>,
+  ",",
+]
+`;

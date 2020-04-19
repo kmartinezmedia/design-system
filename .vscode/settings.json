@@ -1,0 +1,40 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "eslint.nodePath": "node_modules",
+  "javascript.validate.enable": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    ".git": true,
+    "dist": true,
+    "packages/**/dist": true,
+    "build": true,
+    ".cache": true,
+    ".jest": true,
+    ".expo": true
+  },
+  "editor.tabSize": 2,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.format.enable": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.suggest.enabled": true,
+  "typescript.validate.enable": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.packageManager": "yarn"
+}

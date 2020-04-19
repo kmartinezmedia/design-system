@@ -1,0 +1,128 @@
+{
+  "name": "@kmart/design",
+  "version": "0.0.11",
+  "license": "MIT",
+  "description": "Design System",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "sideEffects": false,
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "type-check": "tsc",
+    "test": "cross-env NODE_ENV=test jest",
+    "test:web": "cross-env NODE_ENV=test-web jest",
+    "test:ci": "npm test -- --ci",
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "npm test -- --coverage",
+    "dist": "cross-env NODE_ENV=production babel src/library --out-dir dist --source-maps inline --extensions '.ts,.tsx,.js' --ignore '**/*.test.tsx' --ignore '**/*.d.ts' --ignore '**/*.test.js' --ignore",
+    "types": "ttsc --project tsconfig.library.json",
+    "prebuild": "rimraf dist lib *.tsbuildinfo",
+    "build": "yarn run dist && yarn run types",
+    "postbuild": "node scripts/postbuild.js",
+    "watch": "yarn dist --watch",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "start": "expo start --web",
+    "eject": "expo eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmartinezmedia/design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kmartinezmedia/design-system/issues"
+  },
+  "homepage": "https://github.com/kmartinezmedia/design-system/tree/master/#readme",
+  "keywords": [
+    "design"
+  ],
+  "devDependencies": {
+    "@anansi/eslint-plugin": "^0.9.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@expo/webpack-config": "^0.11.25",
+    "@testing-library/react-hooks": "^3.2.1",
+    "@testing-library/react-native": "^5.0.3",
+    "@types/enzyme": "^3.10.5",
+    "@types/jest": "^25.2.1",
+    "@types/lodash": "^4.14.149",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@types/react-native": "^0.62.2",
+    "@types/react-test-renderer": "^16.9.2",
+    "@zerollup/ts-transform-paths": "^1.7.12",
+    "babel-jest": "^25.3.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-preset-expo": "^8.1.0",
+    "cross-env": "^7.0.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^23.8.2",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "jest-expo": "^37.0.0",
+    "lint-staged": "^10.1.2",
+    "prettier": "^2.0.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^25.4.0",
+    "ttypescript": "^1.5.10",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/react": "^16.9.32",
+    "@types/react-dom": "^16.9.6",
+    "@types/react-native": "^0.62.1",
+    "lodash": "^4.17.15",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "^0.62.1",
+    "react-native-web": "^0.11",
+    "react-native-web-linear-gradient": "^1.1.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.9.2",
+    "@callstack/react-theme-provider": "^2.1.0",
+    "expo": "^37.0.7",
+    "lodash": "^4.17.15",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "^0.62.1",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-reanimated": "^1.8.0",
+    "react-native-web": "^0.11",
+    "react-native-web-linear-gradient": "^1.1.1"
+  },
+  "nativeDependencies": [
+    "react-native-linear-gradient"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix --ext .js",
+      "git add"
+    ],
+    "*.ts": [
+      "eslint --fix --ext .ts",
+      "git add"
+    ],
+    "*.tsx": [
+      "eslint --fix --ext .tsx",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
