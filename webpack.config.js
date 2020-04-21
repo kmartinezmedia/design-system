@@ -1,11 +1,7 @@
 const createExpoWebpackConfigAsync = require('@expo/webpack-config');
 
 const resolveTsconfigPathsToAlias = require('./scripts/resolveTsconfigPathsToAlias');
-
-const localAliases = resolveTsconfigPathsToAlias({
-  tsconfigPath: '../tsconfig.json',
-  webpackConfigBasePath: './src',
-});
+const localAliases = resolveTsconfigPathsToAlias();
 
 module.exports = async function (env, argv) {
   try {

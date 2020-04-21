@@ -9,21 +9,18 @@ import {
 
 import { Text, TextProps } from './Text';
 
-export const Headline: FunctionComponent<TextProps> = ({
-  children,
-  spacing = { bottom: 5 },
-  ...textProps
-}) => (
-  <Text style={styles.Headline} spacing={spacing} {...textProps}>
-    {children}
-  </Text>
-);
-
+export const Headline: FunctionComponent<TextProps> = React.memo(Text);
 const styles = StyleSheet.create({
-  Headline: {
+  headline: {
     fontFamily: fontFamily.medium,
     fontWeight: fontWeight.medium,
     fontSize: fontSize.headline,
     lineHeight: lineHeight.headline,
   },
 });
+
+Headline.displayName = 'Headline';
+Headline.defaultProps = {
+  spacing: { bottom: 5 },
+  style: styles.headline,
+};

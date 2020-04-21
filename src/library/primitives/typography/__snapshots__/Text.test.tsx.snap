@@ -1,294 +1,318 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Text align 1`] = `
-Array [
-  <Text
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#071422",
-          "lineHeight": undefined,
-          "textAlign": "left",
-        },
-        Object {},
-        Object {},
-        Object {},
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-  <Text
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#071422",
-          "lineHeight": undefined,
-          "textAlign": "center",
-        },
-        Object {},
-        Object {},
-        Object {},
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-  <Text
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#071422",
-          "lineHeight": undefined,
-          "textAlign": "right",
-        },
-        Object {},
-        Object {},
-        Object {},
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-]
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#071422",
+        "lineHeight": undefined,
+        "textAlign": "left",
+      },
+      undefined,
+      Object {},
+      undefined,
+    ]
+  }
+>
+  left
+</Text>
+`;
+
+exports[`Text align 2`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#071422",
+        "lineHeight": undefined,
+        "textAlign": "center",
+      },
+      undefined,
+      Object {},
+      undefined,
+    ]
+  }
+>
+  center
+</Text>
+`;
+
+exports[`Text align 3`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#071422",
+        "lineHeight": undefined,
+        "textAlign": "right",
+      },
+      undefined,
+      Object {},
+      undefined,
+    ]
+  }
+>
+  right
+</Text>
 `;
 
 exports[`Text color 1`] = `
-Array [
-  <Text
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#071422",
-          "lineHeight": undefined,
-          "textAlign": undefined,
-        },
-        Object {},
-        Object {},
-        Object {},
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-  <Text
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#E5212E",
-          "lineHeight": undefined,
-          "textAlign": undefined,
-        },
-        Object {},
-        Object {},
-        Object {},
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-  <Text
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#FF9900",
-          "lineHeight": undefined,
-          "textAlign": undefined,
-        },
-        Object {},
-        Object {},
-        Object {},
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-  <Text
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#00A45F",
-          "lineHeight": undefined,
-          "textAlign": undefined,
-        },
-        Object {},
-        Object {},
-        Object {},
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-  <Text
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#1652F0",
-          "lineHeight": undefined,
-          "textAlign": undefined,
-        },
-        Object {},
-        Object {},
-        Object {},
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-  <Text
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#587088",
-          "lineHeight": undefined,
-          "textAlign": undefined,
-        },
-        Object {},
-        Object {},
-        Object {},
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-]
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#071422",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      undefined,
+      Object {},
+      undefined,
+    ]
+  }
+>
+  default
+</Text>
+`;
+
+exports[`Text color 2`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#587088",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      undefined,
+      Object {},
+      undefined,
+    ]
+  }
+>
+  muted
+</Text>
+`;
+
+exports[`Text color 3`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#1652F0",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      undefined,
+      Object {},
+      undefined,
+    ]
+  }
+>
+  primary
+</Text>
+`;
+
+exports[`Text color 4`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#E5212E",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      undefined,
+      Object {},
+      undefined,
+    ]
+  }
+>
+  negative
+</Text>
+`;
+
+exports[`Text color 5`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#00A45F",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      undefined,
+      Object {},
+      undefined,
+    ]
+  }
+>
+  positive
+</Text>
+`;
+
+exports[`Text color 6`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#FF9900",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      undefined,
+      Object {},
+      undefined,
+    ]
+  }
+>
+  warning
+</Text>
 `;
 
 exports[`Text default 1`] = `
 <Text
   style={
     Array [
-      Object {},
+      undefined,
       Object {
         "color": "#071422",
         "lineHeight": undefined,
         "textAlign": undefined,
       },
+      undefined,
       Object {},
-      Object {},
-      Object {},
+      undefined,
     ]
   }
 >
-  Hey, lil 🐛
+  Default
 </Text>
 `;
 
 exports[`Text ellipsize 1`] = `
-Array [
-  <Text
-    ellipsizeMode="clip"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#071422",
-          "lineHeight": undefined,
-          "textAlign": undefined,
-        },
-        Object {},
-        Object {},
-        Object {
-          "overflow": "hidden",
-        },
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-  <Text
-    ellipsizeMode="head"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#071422",
-          "lineHeight": undefined,
-          "textAlign": undefined,
-        },
-        Object {},
-        Object {},
-        Object {
-          "overflow": "hidden",
-        },
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-  <Text
-    ellipsizeMode="middle"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#071422",
-          "lineHeight": undefined,
-          "textAlign": undefined,
-        },
-        Object {},
-        Object {},
-        Object {
-          "overflow": "hidden",
-        },
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-  <Text
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {},
-        Object {
-          "color": "#071422",
-          "lineHeight": undefined,
-          "textAlign": undefined,
-        },
-        Object {},
-        Object {},
-        Object {
-          "overflow": "hidden",
-        },
-      ]
-    }
-  >
-    Hey, lil 🐛
-  </Text>,
-]
+<Text
+  ellipsizeMode="clip"
+  numberOfLines={1}
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#071422",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      Object {
+        "overflow": "hidden",
+      },
+      Object {},
+      undefined,
+    ]
+  }
+>
+  clip
+</Text>
 `;
 
-exports[`Text lineheight 1`] = `
+exports[`Text ellipsize 2`] = `
+<Text
+  ellipsizeMode="head"
+  numberOfLines={1}
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#071422",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      Object {
+        "overflow": "hidden",
+      },
+      Object {},
+      undefined,
+    ]
+  }
+>
+  head
+</Text>
+`;
+
+exports[`Text ellipsize 3`] = `
+<Text
+  ellipsizeMode="middle"
+  numberOfLines={1}
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#071422",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      Object {
+        "overflow": "hidden",
+      },
+      Object {},
+      undefined,
+    ]
+  }
+>
+  middle
+</Text>
+`;
+
+exports[`Text ellipsize 4`] = `
+<Text
+  ellipsizeMode="tail"
+  numberOfLines={1}
+  style={
+    Array [
+      undefined,
+      Object {
+        "color": "#071422",
+        "lineHeight": undefined,
+        "textAlign": undefined,
+      },
+      Object {
+        "overflow": "hidden",
+      },
+      Object {},
+      undefined,
+    ]
+  }
+>
+  tail
+</Text>
+`;
+
+exports[`Text line height 1`] = `
 <Text
   style={
     Array [
-      Object {},
+      undefined,
       Object {
         "color": "#071422",
         "lineHeight": 1,
         "textAlign": undefined,
       },
+      undefined,
       Object {},
-      Object {},
-      Object {},
+      undefined,
     ]
   }
 >
-  Hey, lil 🐛
+  Line Height
 </Text>
 `;
 
@@ -296,21 +320,21 @@ exports[`Text spacing 1`] = `
 <Text
   style={
     Array [
-      Object {},
+      undefined,
       Object {
         "color": "#071422",
         "lineHeight": undefined,
         "textAlign": undefined,
       },
+      undefined,
       Object {
         "paddingHorizontal": 12,
         "paddingTop": 8,
       },
-      Object {},
-      Object {},
+      undefined,
     ]
   }
 >
-  Hey, lil 🐛
+  Spacing
 </Text>
 `;

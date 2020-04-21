@@ -43,39 +43,39 @@ export interface ViewProps
   overflow?: 'visible' | 'hidden' | 'scroll' | 'gradient';
 }
 
-export const View: FunctionComponent<ViewProps> = ({
-  overflow = 'visible',
-  flexDirection = 'column',
-  flexWrap = 'nowrap',
-  justifyContent = 'flex-start',
-  alignItems = 'stretch',
-  alignSelf = 'auto',
-  spacing = 0,
-  dangerouslySetStyle = {},
-  flexGrow,
-  flexShrink,
-  height,
-  width,
-  animated,
-  elevation,
-  pin,
-  onPress,
-  children,
-  ...props
-}) => {
-  const { colors } = useTheme();
-  const spacingStyles = useSpacing(spacing);
-  const pinStyles = usePin(pin);
-  const elevationStyles = useElevation(elevation);
+export const View: FunctionComponent<ViewProps> = React.memo(
+  ({
+    overflow = 'visible',
+    flexDirection = 'column',
+    flexWrap = 'nowrap',
+    justifyContent = 'flex-start',
+    alignItems = 'stretch',
+    alignSelf = 'auto',
+    spacing = 0,
+    dangerouslySetStyle = {},
+    flexGrow,
+    flexShrink,
+    height,
+    width,
+    animated,
+    elevation,
+    pin,
+    onPress,
+    children,
+    ...props
+  }) => {
+    const { colors } = useTheme();
+    const spacingStyles = useSpacing(spacing);
+    const pinStyles = usePin(pin);
+    const elevationStyles = useElevation(elevation);
 
-  const Component = animated ? Animated.View : RNView;
+    const Component = animated ? Animated.View : RNView;
 
-  return (
-    <Component
-      onStartShouldSetResponder={onPress}
-      style={
-        {
-          ...{
+    return (
+      <Component
+        onStartShouldSetResponder={onPress}
+        style={[
+          {
             flexDirection,
             flexWrap,
             justifyContent,
@@ -86,28 +86,29 @@ export const View: FunctionComponent<ViewProps> = ({
             height,
             width,
           },
-          ...spacingStyles,
-          ...pinStyles,
-          ...elevationStyles,
-          ...dangerouslySetStyle,
-        } as any
-      }
-      {...props}>
-      {children}
-      {overflow === 'gradient' ? (
-        <LinearGradient
-          style={styles.Gradient}
-          colors={[
-            '#ffffff00' /* oneoff color bc android can't gradient from 'transparent' */,
-            colors.background.default,
-          ]}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 0 }}
-        />
-      ) : null}
-    </Component>
-  );
-};
+          spacingStyles,
+          pinStyles,
+          elevationStyles,
+          dangerouslySetStyle,
+        ]}
+        {...props}
+      >
+        {children}
+        {overflow === 'gradient' ? (
+          <LinearGradient
+            style={styles.Gradient}
+            colors={[
+              '#ffffff00' /* oneoff color bc android can't gradient from 'transparent' */,
+              colors.background.default,
+            ]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 0 }}
+          />
+        ) : null}
+      </Component>
+    );
+  },
+);
 
 const styles = StyleSheet.create({
   Gradient: {

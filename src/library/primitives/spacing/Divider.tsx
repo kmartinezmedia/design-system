@@ -2,15 +2,15 @@ import React, { FC } from 'react';
 import { View, ViewProps, StyleSheet } from 'react-native';
 import { useTheme } from '@designSystem/theme';
 
-export const Divider: FC<ViewProps> = (props) => {
+export const Divider: FC<ViewProps> = React.memo((props) => {
   const { colors } = useTheme();
   return (
     <View
-      style={{ ...styles.divider, backgroundColor: colors.onBackground.line }}
+      style={[styles.divider, { backgroundColor: colors.onBackground.line }]}
       {...props}
     />
   );
-};
+});
 
 const styles = StyleSheet.create({
   divider: {
@@ -18,3 +18,5 @@ const styles = StyleSheet.create({
     width: '100%',
   },
 });
+
+Divider.displayName = 'Divider';

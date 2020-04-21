@@ -9,21 +9,19 @@ import { StyleSheet } from 'react-native';
 
 import { Text, TextProps } from './Text';
 
-export const Body: FunctionComponent<TextProps> = ({
-  children,
-  spacing = { bottom: 5 },
-  ...textProps
-}) => (
-  <Text style={styles.Body} spacing={spacing} {...textProps}>
-    {children}
-  </Text>
-);
+export const Body: FunctionComponent<TextProps> = Text;
 
 const styles = StyleSheet.create({
-  Body: {
+  body: {
     fontFamily: fontFamily.regular,
     fontWeight: fontWeight.regular,
     fontSize: fontSize.body,
     lineHeight: lineHeight.body,
   },
 });
+
+Body.displayName = 'Body';
+Body.defaultProps = {
+  spacing: { bottom: 5 },
+  style: styles.body,
+};

@@ -3,6 +3,7 @@
     "outDir": "./dist",
     "baseUrl": "./src",
     "paths": {
+      "@utils/Events": ["./library/utils/index.ts"],
       "@designSystem": ["./library/index.ts" ],
       "@designSystem/*": [
         "./library/*"

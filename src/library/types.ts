@@ -50,3 +50,11 @@ export type PinningDirection = 'top' | 'bottom' | 'left' | 'right' | 'all';
 
 // Elevation levels
 export type ElevationLevels = 1 | 2;
+
+// Button Variant
+export type ButtonVariant =
+  | 'primary'
+  | 'secondary'
+  | 'positive'
+  | 'negative'
+  | 'tertiary';

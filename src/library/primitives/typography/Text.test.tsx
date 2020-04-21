@@ -1,73 +1,69 @@
 import React from 'react';
-import 'react-native';
-import { create, act, ReactTestRenderer } from 'react-test-renderer';
+import { render, toJSON } from '@testing-library/react-native';
+
 import { Text } from './Text';
 
+const textColors = [
+  'default',
+  'muted',
+  'primary',
+  'negative',
+  'positive',
+  'warning',
+] as const;
+const align = ['left', 'center', 'right'] as const;
+const ellipsize = ['clip', 'head', 'middle', 'tail'] as const;
+
+const TestComponent = () => (
+  <>
+    <Text>Default</Text>
+    <Text spacing={{ top: 2, horizontal: 3 }}>Spacing</Text>
+    <Text lineHeight={1}>Line Height</Text>
+    {textColors.map((color) => (
+      <Text key={color} color={color}>
+        {color}
+      </Text>
+    ))}
+    {align.map((direction) => (
+      <Text key={direction} align={direction}>
+        {direction}
+      </Text>
+    ))}
+    {ellipsize.map((type) => (
+      <Text key={type} ellipsize={type}>
+        {type}
+      </Text>
+    ))}
+  </>
+);
+
 describe('Text', () => {
-  it('default', () => {
-    let component: ReactTestRenderer;
-    act(() => {
-      component = create(<Text>Hey, lil 🐛</Text>);
-    });
-    expect(component!.toJSON()).toMatchSnapshot();
+  async function renderSnapshot(lookupText: string) {
+    const { getByText, rerender } = await render(<TestComponent />);
+    const el = getByText(lookupText);
+    expect(toJSON(el)).toMatchSnapshot();
+    return { el, rerender };
+  }
+
+  it.only('default', async () => {
+    const { el, rerender } = await renderSnapshot('Default');
+    const style1 = el.getProp('style');
+    await rerender();
+    expect(el.getProp('style')).toEqual(style1);
   });
-  it('spacing', () => {
-    let component: ReactTestRenderer;
-    act(() => {
-      component = create(
-        <Text spacing={{ top: 2, horizontal: 3 }}>Hey, lil 🐛</Text>,
-      );
-    });
-    expect(component!.toJSON()).toMatchSnapshot();
+  it('spacing', async () => {
+    await renderSnapshot('Spacing');
   });
-  it('color', () => {
-    let component: ReactTestRenderer;
-    act(() => {
-      component = create(
-        <>
-          <Text>Hey, lil 🐛</Text>
-          <Text color="negative">Hey, lil 🐛</Text>
-          <Text color="warning">Hey, lil 🐛</Text>
-          <Text color="positive">Hey, lil 🐛</Text>
-          <Text color="primary">Hey, lil 🐛</Text>
-          <Text color="muted">Hey, lil 🐛</Text>
-        </>,
-      );
-    });
-    expect(component!.toJSON()).toMatchSnapshot();
+  it('color', async () => {
+    await Promise.all(textColors.map((color) => renderSnapshot(color)));
   });
-  it('align', () => {
-    let component: ReactTestRenderer;
-    act(() => {
-      component = create(
-        <>
-          <Text align="left">Hey, lil 🐛</Text>
-          <Text align="center">Hey, lil 🐛</Text>
-          <Text align="right">Hey, lil 🐛</Text>
-        </>,
-      );
-    });
-    expect(component!.toJSON()).toMatchSnapshot();
+  it('align', async () => {
+    await Promise.all(align.map((direction) => renderSnapshot(direction)));
   });
-  it('ellipsize', () => {
-    let component: ReactTestRenderer;
-    act(() => {
-      component = create(
-        <>
-          <Text ellipsize="clip">Hey, lil 🐛</Text>
-          <Text ellipsize="head">Hey, lil 🐛</Text>
-          <Text ellipsize="middle">Hey, lil 🐛</Text>
-          <Text ellipsize="tail">Hey, lil 🐛</Text>
-        </>,
-      );
-    });
-    expect(component!.toJSON()).toMatchSnapshot();
+  it('ellipsize', async () => {
+    await Promise.all(ellipsize.map((type) => renderSnapshot(type)));
   });
-  it('lineheight', () => {
-    let component: ReactTestRenderer;
-    act(() => {
-      component = create(<Text lineHeight={1}>Hey, lil 🐛</Text>);
-    });
-    expect(component!.toJSON()).toMatchSnapshot();
+  it('line height', async () => {
+    await renderSnapshot('Line Height');
   });
 });

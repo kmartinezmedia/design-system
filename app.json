@@ -2,7 +2,7 @@
   "expo": {
     "name": "kmart-design",
     "slug": "kmart-design",
-    "entryPoint": "./src/app/index.tsx",
+    "entryPoint": "./src/app/App.tsx",
     "platforms": [
       "ios",
       "android",

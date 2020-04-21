@@ -5,21 +5,12 @@ import {
   fontWeight,
   fontSize,
   lineHeight,
+  spacing as spacingConstants,
 } from '@designSystem/theme';
 
 import { Text, TextProps } from './Text';
 
-export const Title1: FunctionComponent<TextProps> = ({
-  children,
-  spacing = { bottom: 6 },
-  ...textProps
-}) => {
-  return (
-    <Text style={styles.title1} spacing={spacing} {...textProps}>
-      {children}
-    </Text>
-  );
-};
+export const Title1: FunctionComponent<TextProps> = React.memo(Text);
 
 const styles = StyleSheet.create({
   title1: {
@@ -27,5 +18,11 @@ const styles = StyleSheet.create({
     lineHeight: lineHeight.title1,
     fontFamily: fontFamily.medium,
     fontWeight: fontWeight.medium,
+    paddingBottom: spacingConstants[6],
   },
 });
+
+Title1.displayName = 'Title1';
+Title1.defaultProps = {
+  style: styles.title1,
+};

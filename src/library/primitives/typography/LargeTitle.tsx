@@ -9,21 +9,19 @@ import {
 
 import { Text, TextProps } from './Text';
 
-export const LargeTitle: FunctionComponent<TextProps> = ({
-  children,
-  spacing = { bottom: 8 },
-  ...textProps
-}) => (
-  <Text style={styles.LargeTitle} spacing={spacing} {...textProps}>
-    {children}
-  </Text>
-);
+export const LargeTitle: FunctionComponent<TextProps> = React.memo(Text);
 
 const styles = StyleSheet.create({
-  LargeTitle: {
+  largeTitle: {
     fontSize: fontSize.largeTitle,
     fontFamily: fontFamily.regular,
     fontWeight: fontWeight.regular,
     lineHeight: lineHeight.largeTitle,
   },
 });
+
+LargeTitle.displayName = 'LargeTitle';
+LargeTitle.defaultProps = {
+  spacing: { bottom: 8 },
+  style: styles.largeTitle,
+};

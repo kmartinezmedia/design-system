@@ -10,5 +10,8 @@ module.exports = {
     es6: true,
     jest: true
   },
-  plugins: ['jest']
+  plugins: ['jest'],
+  rules: {
+    "react/display-name": 0
+  }
 }

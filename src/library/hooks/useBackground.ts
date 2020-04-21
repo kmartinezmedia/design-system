@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { useTheme } from '@designSystem/theme';
 import { SurfaceModifier, Theme } from '@designSystem/types';
 
@@ -10,7 +11,9 @@ export const useBackground = <
 ) => {
   const { colors } = useTheme();
 
-  if (surface in colors && color in colors[surface]) {
-    return colors[surface][color];
-  }
+  useMemo(() => {
+    if (surface in colors && color in colors[surface]) {
+      return colors[surface][color];
+    }
+  }, [surface, color, colors]);
 };

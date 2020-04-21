@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactNode } from 'react';
+import React, { FunctionComponent, ReactNode, useCallback } from 'react';
 import {
   HStack,
   VStack,
@@ -26,6 +26,8 @@ export interface ListCellProps extends Omit<HStackProps, 'onPress'> {
   onPress?: (event: GestureResponderEvent) => void;
 }
 
+const spacingDefaults = { vertical: 4, horizontal: gutter } as const;
+
 export const ListCell: FunctionComponent<ListCellProps> = ({
   ellipsize = 'tail',
   variant = 'static',
@@ -38,15 +40,18 @@ export const ListCell: FunctionComponent<ListCellProps> = ({
   tertiary,
   marker,
   children,
-  spacing = { vertical: 4, horizontal: gutter },
+  spacing = spacingDefaults,
   ...props
 }) => {
   const { tapped } = useAnalytics();
 
-  const handlePress = (event: GestureResponderEvent) => {
-    tapped(name);
-    onPress(event);
-  };
+  const handlePress = useCallback(
+    (event: GestureResponderEvent) => {
+      tapped(name);
+      onPress(event);
+    },
+    [name, tapped, onPress],
+  );
 
   return (
     <TouchableWithoutFeedback onPress={handlePress}>
@@ -64,30 +69,32 @@ export const ListCell: FunctionComponent<ListCellProps> = ({
           >
             {title}
           </Body>
-          {subtitle ? (
+          {subtitle && (
             <Caption ellipsize={ellipsize === 'fade' ? 'clip' : ellipsize}>
               {subtitle}
             </Caption>
-          ) : null}
+          )}
         </VStack>
         {children}
-        {value ? (
+        {value && (
           <VStack spacing={0} alignItems="flex-end" minWidth="20%">
             <Body spacing={0}>{value}</Body>
             {tertiary ? <Caption>{tertiary}</Caption> : null}
           </VStack>
-        ) : null}
-        {marker === 'checked' ? (
+        )}
+        {marker === 'checked' && (
           <VStack spacing={{ left: 4 }}>
             <Icon name="checkmarkFilled" />
           </VStack>
-        ) : null}
-        {variant === 'action' ? (
+        )}
+        {variant === 'action' && (
           <VStack spacing={{ left: 4 }}>
             <Icon name="chevron" />
           </VStack>
-        ) : null}
+        )}
       </HStack>
     </TouchableWithoutFeedback>
   );
 };
+
+ListCell.displayName = 'ListCell';

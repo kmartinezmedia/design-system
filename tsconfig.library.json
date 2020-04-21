@@ -3,9 +3,10 @@
     "outDir": "./dist",
     "baseUrl": "./src/library",
     "paths": {
+      "@utils/Events": ["./utils/index.ts"],
       "@designSystem/*": [
         "*"
-      ]
+      ],
     },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,

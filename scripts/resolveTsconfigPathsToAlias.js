@@ -6,18 +6,19 @@ const { resolve } = require('path');
  * @param  {string} webpackConfigBasePath  - Path from tsconfig to Webpack config to create absolute aliases
  * @return {object}                        - Webpack alias config
  */
-function resolveTsconfigPathsToAlias({
-  tsconfigPath = './tsconfig.json',
-  webpackConfigBasePath = __dirname,
-} = {}) {
-  const { paths } = require(tsconfigPath).compilerOptions;
+function resolveTsconfigPathsToAlias() {
+  const { paths } = require(resolve(
+    __dirname,
+    '../tsconfig.json',
+  )).compilerOptions;
 
   const aliases = {};
 
   Object.keys(paths).forEach((item) => {
     const key = item.replace('/*', '');
     const value = resolve(
-      webpackConfigBasePath,
+      __dirname,
+      '../src',
       paths[item][0].replace('/*', '').replace('*', ''),
     );
 

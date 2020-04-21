@@ -9,22 +9,19 @@ import {
 
 import { Text, TextProps } from './Text';
 
-export const Caption: FunctionComponent<TextProps> = ({
-  children,
-  color = 'muted',
-  spacing = { bottom: 1 },
-  ...typeProps
-}) => (
-  <Text {...typeProps} spacing={spacing} color={color} style={styles.Caption}>
-    {children}
-  </Text>
-);
+export const Caption: FunctionComponent<TextProps> = React.memo(Text);
 
 const styles = StyleSheet.create({
-  Caption: {
+  caption: {
     fontFamily: fontFamily.regular,
     fontWeight: fontWeight.regular,
     fontSize: fontSize.caption,
     lineHeight: lineHeight.caption,
   },
 });
+
+Caption.displayName = 'Caption';
+Caption.defaultProps = {
+  spacing: { bottom: 1 },
+  style: styles.caption,
+};

@@ -4,9 +4,10 @@ import {
   Text as RNText,
   TextStyle,
   TextProps as RNTextProps,
+  StyleSheet,
 } from 'react-native';
 import { SurfaceColorMap, Spacing } from '@designSystem/types';
-import { debounce } from '@designSystem/utils';
+import { debounce } from '@utils/Events';
 import { useSpacing, useForeground } from '@designSystem/hooks';
 
 export interface TextProps<
@@ -39,7 +40,6 @@ export const Text = <
   dangerouslySetStyle,
   ...textProps
 }: React.PropsWithChildren<TextProps<T, C>>) => {
-  const space = useSpacing(spacing);
   const textColor = useForeground(surface, color);
 
   const computedLineHeight =
@@ -58,16 +58,16 @@ export const Text = <
     <RNText
       onPress={onPress && debounce(onPress)}
       style={[
-        { ...style },
+        style,
         {
           color: textColor,
           textAlign: align,
           lineHeight:
             computedLineHeight === 'none' ? undefined : computedLineHeight,
         },
-        { ...space },
-        { ...dangerouslySetStyle },
-        ellipsize ? { overflow: 'hidden' } : {},
+        ellipsize && styles.withEllipse,
+        useSpacing(spacing),
+        dangerouslySetStyle,
       ]}
       {...ellipsizeProps}
       {...textProps}
@@ -76,3 +76,9 @@ export const Text = <
     </RNText>
   );
 };
+
+const styles = StyleSheet.create({
+  withEllipse: {
+    overflow: 'hidden',
+  },
+});
