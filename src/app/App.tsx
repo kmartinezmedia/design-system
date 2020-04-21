@@ -1,59 +1,43 @@
 import React from 'react';
-import * as System from '@designSystem';
-import { registerRootComponent } from 'expo';
-import { Platform } from 'react-native';
-import { VStack, ThemeProvider, Body, Button } from '@designSystem';
+import { registerRootComponent, AppLoading } from 'expo';
+import { VStack, ThemeProvider, Screen } from '@designSystem';
+import useAssetLoader from '@app/hooks/useAssetLoader';
+import { fonts } from '@designSystem/assets';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Animation1 from '@app/screens/Animation1';
+import Counter from '@app/screens/Counter';
+import Docs from '@app/screens/Docs';
+import initPerf from '@app/utils/initPerf';
+import { ScrollView } from 'react-native-gesture-handler';
 
-// const components = Object.keys(System).filter(
-//   (name) =>
-//     typeof System[name] === 'function' &&
-//     !name.includes('use') &&
-//     !name.includes('with') &&
-//     name !== 'debounce',
-// );
+initPerf(false);
 
-if (process.env.NODE_ENV !== 'production' && Platform.OS === 'web') {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const whyDidYouRender = require('@welldone-software/why-did-you-render');
-  whyDidYouRender(React, {
-    trackAllPureComponents: true,
+const App = () => {
+  const { isLoadingAssets, ...callbackFns } = useAssetLoader({
+    fonts: fonts,
   });
-  Object.keys(System).forEach((item) => {
-    if (typeof System[item] === 'function') {
-      System[item].displayName = item;
-      System[item].whyDidYouRender = {
-        logOnDifferentValues: true,
-        customName: item,
-      };
-    }
-  });
-}
 
-function App() {
   return (
-    <VStack>
-      <ThemeProvider>
-        <Counter />
-      </ThemeProvider>
-    </VStack>
+    <SafeAreaProvider>
+      {isLoadingAssets ? <AppLoading {...callbackFns} /> : <AppContent />}
+    </SafeAreaProvider>
   );
-}
+};
 
-const Counter = () => {
-  const [count, setCount] = React.useState(0);
-  const increment = React.useCallback(() => {
-    setCount((c) => c + 1);
-  }, [setCount]);
+const AppContent = () => {
   return (
-    <>
-      <Button onClick={increment}>Click me</Button>
-      <Body>Some body text that should only render once</Body>
-    </>
+    <ScrollView>
+      <Screen>
+        <VStack>
+          <ThemeProvider>
+            <Animation1 />
+            <Counter />
+            <Docs />
+          </ThemeProvider>
+        </VStack>
+      </Screen>
+    </ScrollView>
   );
 };
 
 registerRootComponent(App);
-
-// const AllExports = () => {
-//   return Object.keys(System).map((name) => <Body>{name}</Body>);
-// };

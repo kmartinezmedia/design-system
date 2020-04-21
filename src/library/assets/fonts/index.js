@@ -1,5 +1,5 @@
-exports = {
+export default {
   CoinbaseIcons: require('./CoinbaseIcons.ttf'),
-  GraphikRegular: require('./Graphik-Regular.ttf'),
-  GraphikMedium: require('./Graphik-Medium.ttf'),
+  'Graphik-Regular': require('./Graphik-Regular.ttf'),
+  'Graphik-Medium': require('./Graphik-Medium.ttf'),
 };

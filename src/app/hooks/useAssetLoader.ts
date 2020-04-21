@@ -27,12 +27,14 @@ const useAssetLoader = (config: Props): AssetLoaderState => {
     SplashScreen.preventAutoHide();
   }, []);
 
-  const loadResourcesRequest = useCallback(async (): Promise<void> => {
+  const loadResourcesRequest = useCallback(async () => {
     const requests: any[] = [];
     if (images) {
       requests.push(
-        images.map(image =>
-          typeof image === 'string' ? Image.prefetch(image) : Asset.fromModule(image).downloadAsync(),
+        images.map((image) =>
+          typeof image === 'string'
+            ? Image.prefetch(image)
+            : Asset.fromModule(image).downloadAsync(),
         ),
       );
     }
@@ -41,7 +43,7 @@ const useAssetLoader = (config: Props): AssetLoaderState => {
       requests.push(Font.loadAsync(fonts));
     }
 
-    return Promise.all(requests);
+    return (Promise.all(requests) as any) as Promise<void>;
   }, [images, fonts]);
 
   return {
