@@ -23,17 +23,24 @@
     "declaration": true,
     "declarationMap": true,
     "declarationDir": "./dist",
-    "jsx": "react",
     "target": "esnext",
     "lib": [
       "es6"
     ],
+    "jsx": "react",
     "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "strictNullChecks": true,
+    "strict": true,
     "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
     "types": [
       "jest",
       "node"

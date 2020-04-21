@@ -12,6 +12,9 @@ module.exports = {
   },
   plugins: ['jest'],
   rules: {
-    "react/display-name": 0
+    "react/display-name": 0,
+    "no-bitwise": 0,
+    "react-native/no-inline-styles": 0,
+    "react-native/no-color-literals": 0
   }
 }
