@@ -4,15 +4,15 @@ exports[`Link default 1`] = `
 <Text
   style={
     Array [
-      Object {},
+      undefined,
+      undefined,
       Object {
         "color": "#1652F0",
         "lineHeight": undefined,
+        "overflow": "visible",
         "textAlign": undefined,
       },
-      Object {},
-      Object {},
-      Object {},
+      undefined,
     ]
   }
 >

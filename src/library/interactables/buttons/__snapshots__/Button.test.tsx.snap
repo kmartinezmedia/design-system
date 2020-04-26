@@ -1,0 +1,491 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button default 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 0,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "paddingBottom": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <TouchableWithoutFeedback
+      onPressIn={[Function]}
+      onPressOut={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#1652F0",
+            "borderColor": "#1652F0",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "padding": 16,
+            "textColor": "#FFFFFF",
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+            ],
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Medium",
+                "fontSize": 16,
+                "fontWeight": "500",
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Hey, lil 🐛
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 0,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "paddingBottom": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <TouchableWithoutFeedback
+      onPressIn={[Function]}
+      onPressOut={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#F1F3F5",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "padding": 16,
+            "textColor": "#1652F0",
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+            ],
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Medium",
+                "fontSize": 16,
+                "fontWeight": "500",
+              },
+              Object {
+                "color": "#1652F0",
+              },
+            ]
+          }
+        >
+          Hey, lil 🐛
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 0,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "paddingBottom": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <TouchableWithoutFeedback
+      onPressIn={[Function]}
+      onPressOut={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#00A45F",
+            "borderColor": "#00A45F",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "padding": 16,
+            "textColor": "#FFFFFF",
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+            ],
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Medium",
+                "fontSize": 16,
+                "fontWeight": "500",
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Hey, lil 🐛
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 0,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "paddingBottom": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <TouchableWithoutFeedback
+      onPressIn={[Function]}
+      onPressOut={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#E5212E",
+            "borderColor": "#00A45F",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "padding": 16,
+            "textColor": "#FFFFFF",
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+            ],
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Medium",
+                "fontSize": 16,
+                "fontWeight": "500",
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Hey, lil 🐛
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 0,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "paddingBottom": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <TouchableWithoutFeedback
+      onPressIn={[Function]}
+      onPressOut={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "padding": 4,
+            "textColor": "#587088",
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+            ],
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Medium",
+                "fontSize": 16,
+                "fontWeight": "500",
+              },
+              Object {
+                "color": "#587088",
+              },
+            ]
+          }
+        >
+          Hey, lil 🐛
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>,
+]
+`;
+
+exports[`Button positions 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 0,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "padding": 12,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <TouchableWithoutFeedback
+      onPressIn={[Function]}
+      onPressOut={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#1652F0",
+            "borderColor": "#1652F0",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "padding": 16,
+            "textColor": "#FFFFFF",
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+            ],
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Medium",
+                "fontSize": 16,
+                "fontWeight": "500",
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Hey, lil 🐛
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": 0,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "padding": 8,
+        },
+        Object {
+          "bottom": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <TouchableWithoutFeedback
+      onPressIn={[Function]}
+      onPressOut={[Function]}
+    >
+      <View
+        pin="right"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#1652F0",
+            "borderColor": "#1652F0",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "padding": 16,
+            "textColor": "#FFFFFF",
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+            ],
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Graphik-Medium",
+                "fontSize": 16,
+                "fontWeight": "500",
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Hey, lil 🐛
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>,
+]
+`;

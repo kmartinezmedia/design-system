@@ -11,7 +11,7 @@ export const useSpacing = (
   const styles = {};
 
   if (!spacing) {
-    return styles;
+    return undefined;
   }
 
   const setSpacing = (

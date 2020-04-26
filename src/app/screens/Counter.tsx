@@ -1,7 +1,7 @@
 import React from 'react';
 import { Body, Button } from '@designSystem';
 
-export default function Counter() {
+export function Counter() {
   const [_count, setCount] = React.useState(0);
   const increment = React.useCallback(() => {
     setCount((c) => c + 1);

@@ -7,7 +7,7 @@ export const usePin = (pin?: PinningDirection) => {
     const styles: ViewStyle = {};
 
     if (!pin) {
-      return styles;
+      return undefined;
     }
 
     styles.position = 'absolute';

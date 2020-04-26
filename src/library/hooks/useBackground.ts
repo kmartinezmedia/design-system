@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
-import { useTheme } from '@designSystem/theme';
 import { SurfaceModifier, Theme } from '@designSystem/types';
+
+import { useTheme } from '@designSystem/theme';
 
 export const useBackground = <
   T extends SurfaceModifier,
@@ -11,9 +11,7 @@ export const useBackground = <
 ) => {
   const { colors } = useTheme();
 
-  useMemo(() => {
-    if (surface in colors && color in colors[surface]) {
-      return colors[surface][color];
-    }
-  }, [surface, color, colors]);
+  if (surface in colors && color in colors[surface]) {
+    return colors[surface][color];
+  }
 };

@@ -1,11 +1,9 @@
 import React, { FunctionComponent } from 'react';
-
 import { View, ViewProps } from './View';
 
-export type VStackProps = ViewProps;
-export const VStack: FunctionComponent<ViewProps> = React.memo(View);
+export const VStack: FunctionComponent<ViewProps> = ({
+  spacing = 4,
+  ...props
+}) => <View {...props} spacing={spacing} />;
 
-VStack.displayName = 'VStack';
-VStack.defaultProps = {
-  spacing: 4,
-};
+export { ViewProps as VStackProps };

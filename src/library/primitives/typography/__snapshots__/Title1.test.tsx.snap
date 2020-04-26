@@ -11,15 +11,15 @@ exports[`Title1 default 1`] = `
         "lineHeight": 40,
       },
       Object {
-        "color": "#071422",
-        "lineHeight": 40,
-        "textAlign": undefined,
-      },
-      Object {
         "paddingBottom": 24,
       },
-      Object {},
-      Object {},
+      Object {
+        "color": "#071422",
+        "lineHeight": 40,
+        "overflow": "visible",
+        "textAlign": undefined,
+      },
+      undefined,
     ]
   }
 >

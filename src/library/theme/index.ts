@@ -8,4 +8,6 @@ export * from './typography';
 export * from './animations';
 
 // Theme contexts
-export * from './context';
+export * from '@designSystem/theme/context/default';
+export * from '@designSystem/theme/context/inverse';
+export * from '@designSystem/theme/context/brand';

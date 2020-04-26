@@ -1,13 +1,13 @@
+ignoreWarnings();
+
 import React from 'react';
 import { registerRootComponent, AppLoading } from 'expo';
 import { VStack, ThemeProvider, Screen } from '@designSystem';
-import useAssetLoader from '@app/hooks/useAssetLoader';
+import { useAssetLoader } from '@app/hooks';
 import { fonts } from '@designSystem/assets';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import Animation1 from '@app/screens/Animation1';
-import Counter from '@app/screens/Counter';
-import Docs from '@app/screens/Docs';
-import initPerf from '@app/utils/initPerf';
+import { Animation1, Counter, Docs } from '@app/screens';
+import { initPerf, ignoreWarnings } from '@app/utils';
 import { ScrollView } from 'react-native-gesture-handler';
 
 initPerf(false);

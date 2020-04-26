@@ -1,4 +1,4 @@
-import React, { useRef, FunctionComponent } from 'react';
+import React, { FunctionComponent } from 'react';
 import {
   GestureResponderEvent,
   Text,
@@ -9,25 +9,30 @@ import {
   View as RNView,
 } from 'react-native';
 import { View, ViewProps } from '@designSystem/primitives';
-import { border, fontFamily, fontSize, fontWeight } from '@designSystem/theme';
+import {
+  border,
+  fontFamily,
+  fontSize,
+  fontWeight,
+  spacing as spacingConstant,
+} from '@designSystem/theme';
 import { ButtonVariant } from '@designSystem/types';
-import { useButtonVariant } from '@designSystem/hooks';
+import { useButtonVariant, usePressAnimation } from '@designSystem/hooks';
 
 export interface ButtonProps extends Omit<ViewProps, 'onPress'> {
-  name?: string;
+  testID?: string;
   variant?: ButtonVariant;
   disabled?: boolean;
   isLoading?: boolean;
   outline?: boolean;
-  layout?: 'block' | 'inline';
   onPress?: (e: GestureResponderEvent) => void;
 }
 
 export const Button: FunctionComponent<ButtonProps> = ({
   variant = 'primary',
-  layout = 'block',
   spacing = { bottom: 4 },
-  name,
+  flexGrow = 0,
+  testID,
   children,
   disabled,
   isLoading,
@@ -35,42 +40,24 @@ export const Button: FunctionComponent<ButtonProps> = ({
   ...props
 }) => {
   const variantStyles = useButtonVariant(variant, disabled);
-  const buttonScale = useRef(new Animated.Value(1)).current;
-
-  const handleOnPressIn = () => {
-    Animated.spring(buttonScale, {
-      toValue: 0.98,
-      useNativeDriver: true,
-    }).start();
-  };
-
-  const handleOnPressOut = () => {
-    Animated.spring(buttonScale, {
-      friction: 3,
-      tension: 5,
-      toValue: 1,
-      useNativeDriver: true,
-    }).start();
-  };
+  const [pressIn, pressOut, scale] = usePressAnimation();
 
   return (
-    <View spacing={spacing} {...props}>
+    <View flexGrow={flexGrow} spacing={spacing} {...props}>
       <TouchableWithoutFeedback
-        testID={name}
+        testID={testID}
         onPress={onPress}
-        onPressIn={handleOnPressIn}
-        onPressOut={handleOnPressOut}
-        disabled={disabled || isLoading}
-      >
+        onPressIn={pressIn}
+        onPressOut={pressOut}
+        disabled={disabled || isLoading}>
         <Animated.View
           style={[
             styles.button,
+            variant === 'tertiary' && styles.tertiary,
             variantStyles,
-            { transform: [{ scale: buttonScale }] },
-            layout === 'block' ? styles.buttonBlock : styles.buttonInline,
+            { transform: [{ scale }] },
           ]}
-          {...props}
-        >
+          {...props}>
           {isLoading ? (
             <RNView style={styles.loading}>
               <ActivityIndicator size="small" color={variantStyles.textColor} />
@@ -92,16 +79,15 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     borderStyle: 'solid',
-    borderRadius: border.buttonRadius,
-  },
-  buttonBlock: {
     width: '100%',
+    borderRadius: border.buttonRadius,
+    padding: spacingConstant[4],
   },
-  buttonInline: {
-    flexGrow: 1,
+  tertiary: {
+    padding: spacingConstant[1],
   },
   loading: {
-    padding: 1,
+    height: 18,
   },
   text: {
     fontFamily: fontFamily.medium,

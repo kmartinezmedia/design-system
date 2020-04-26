@@ -12,7 +12,10 @@ module.exports = function (api) {
         {
           extensions: ['.ts', '.tsx', '.js'],
           root: ['./src'],
-          alias: localAliases,
+          alias: {
+            ...localAliases,
+            'react-native-linear-gradient': 'react-native-web-linear-gradient',
+          },
         },
       ],
     ],

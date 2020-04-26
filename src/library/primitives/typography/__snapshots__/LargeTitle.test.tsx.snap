@@ -11,15 +11,15 @@ exports[`LargeTitle default 1`] = `
         "lineHeight": 88,
       },
       Object {
-        "color": "#071422",
-        "lineHeight": 88,
-        "textAlign": undefined,
-      },
-      Object {
         "paddingBottom": 32,
       },
-      Object {},
-      Object {},
+      Object {
+        "color": "#071422",
+        "lineHeight": 88,
+        "overflow": "visible",
+        "textAlign": undefined,
+      },
+      undefined,
     ]
   }
 >

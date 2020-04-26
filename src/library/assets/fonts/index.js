@@ -1,5 +1,7 @@
 export default {
-  CoinbaseIcons: require('./CoinbaseIcons.ttf'),
-  'Graphik-Regular': require('./Graphik-Regular.ttf'),
-  'Graphik-Medium': require('./Graphik-Medium.ttf'),
+  CoinbaseIconsLarge: require('./CoinbaseIconsLarge.ttf'),
+  CoinbaseIconsMedium: require('./CoinbaseIconsMedium.ttf'),
+  CoinbaseIconsSmall: require('./CoinbaseIconsSmall.ttf'),
+  'Graphik-Regular': require('./Graphik-Regular.otf'),
+  'Graphik-Medium': require('./Graphik-Medium.otf'),
 };

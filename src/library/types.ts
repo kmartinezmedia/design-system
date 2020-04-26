@@ -58,3 +58,9 @@ export type ButtonVariant =
   | 'positive'
   | 'negative'
   | 'tertiary';
+
+// Small Button Variant
+export type SmallButtonVariant = 'primary' | 'secondary' | 'positive';
+
+// Input Variant
+export type InputVariant = 'default' | 'positive' | 'negative';

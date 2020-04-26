@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon Large 1`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "fontFamily": "CoinbaseIconsLarge",
+        "fontSize": 32,
+      },
+      Object {
+        "color": "#1652F0",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`Icon Medium 1`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "fontFamily": "CoinbaseIconsMedium",
+        "fontSize": 16,
+      },
+      Object {
+        "color": "#1652F0",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`Icon Small 1`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "fontFamily": "CoinbaseIconsSmall",
+        "fontSize": 12,
+      },
+      Object {
+        "color": "#1652F0",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;

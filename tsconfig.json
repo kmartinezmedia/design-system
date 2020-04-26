@@ -8,6 +8,7 @@
       "@designSystem/*": [
         "./library/*"
       ],
+      "@utils/analytics/useAnalytics": ["./library/utils/useAnalytics.ts"],
       "@app/*": [
         "app/*"
       ]

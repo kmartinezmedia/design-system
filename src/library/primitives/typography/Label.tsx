@@ -1,26 +1,28 @@
-import {
-  fontFamily,
-  fontSize,
-  fontWeight,
-  lineHeight,
-} from '@designSystem/theme';
 import React, { FunctionComponent } from 'react';
 import { StyleSheet } from 'react-native';
-
 import { Text, TextProps } from './Text';
+import {
+  fontFamily,
+  fontWeight,
+  fontSize,
+  lineHeight,
+} from '@designSystem/theme';
 
-export const Label: FunctionComponent<TextProps> = React.memo(Text);
+export const Label: FunctionComponent<TextProps> = ({
+  children,
+  spacing = { bottom: 1 },
+  ...textProps
+}) => (
+  <Text style={styles.Label} spacing={spacing} {...textProps}>
+    {children}
+  </Text>
+);
 
 const styles = StyleSheet.create({
-  label: {
+  Label: {
     fontFamily: fontFamily.medium,
     fontWeight: fontWeight.medium,
     fontSize: fontSize.label,
     lineHeight: lineHeight.label,
   },
 });
-
-Label.defaultProps = {
-  spacing: { bottom: 1 },
-  style: styles.label,
-};

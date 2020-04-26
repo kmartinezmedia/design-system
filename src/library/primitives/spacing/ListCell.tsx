@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactNode, useCallback } from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 import {
   HStack,
   VStack,
@@ -10,7 +10,7 @@ import {
 import { noop } from 'lodash';
 import { TouchableWithoutFeedback } from 'react-native';
 import { GestureResponderEvent } from 'react-native';
-import { useAnalytics } from '@designSystem/utils';
+import { useAnalytics } from '@utils/analytics/useAnalytics';
 import { gutter } from '@designSystem/theme';
 
 export interface ListCellProps extends Omit<HStackProps, 'onPress'> {
@@ -26,8 +26,6 @@ export interface ListCellProps extends Omit<HStackProps, 'onPress'> {
   onPress?: (event: GestureResponderEvent) => void;
 }
 
-const spacingDefaults = { vertical: 4, horizontal: gutter } as const;
-
 export const ListCell: FunctionComponent<ListCellProps> = ({
   ellipsize = 'tail',
   variant = 'static',
@@ -40,18 +38,15 @@ export const ListCell: FunctionComponent<ListCellProps> = ({
   tertiary,
   marker,
   children,
-  spacing = spacingDefaults,
+  spacing = { vertical: 4, horizontal: gutter },
   ...props
 }) => {
   const { tapped } = useAnalytics();
 
-  const handlePress = useCallback(
-    (event: GestureResponderEvent) => {
-      tapped(name);
-      onPress(event);
-    },
-    [name, tapped, onPress],
-  );
+  const handlePress = (event: GestureResponderEvent) => {
+    tapped(name);
+    onPress(event);
+  };
 
   return (
     <TouchableWithoutFeedback onPress={handlePress}>
@@ -61,40 +56,36 @@ export const ListCell: FunctionComponent<ListCellProps> = ({
           spacing={icon ? { horizontal: 4 } : 0}
           flexGrow={1}
           flexShrink={1}
-          overflow={ellipsize === 'fade' ? 'gradient' : undefined}
-        >
+          overflow={ellipsize === 'fade' ? 'gradient' : undefined}>
           <Body
             ellipsize={ellipsize === 'fade' ? 'clip' : ellipsize}
-            spacing={0}
-          >
+            spacing={0}>
             {title}
           </Body>
-          {subtitle && (
+          {subtitle ? (
             <Caption ellipsize={ellipsize === 'fade' ? 'clip' : ellipsize}>
               {subtitle}
             </Caption>
-          )}
+          ) : null}
         </VStack>
         {children}
-        {value && (
+        {value ? (
           <VStack spacing={0} alignItems="flex-end" minWidth="20%">
             <Body spacing={0}>{value}</Body>
             {tertiary ? <Caption>{tertiary}</Caption> : null}
           </VStack>
-        )}
-        {marker === 'checked' && (
+        ) : null}
+        {marker === 'checked' ? (
           <VStack spacing={{ left: 4 }}>
-            <Icon name="checkmarkFilled" />
+            <Icon size="small" name="check" />
           </VStack>
-        )}
-        {variant === 'action' && (
+        ) : null}
+        {variant === 'action' ? (
           <VStack spacing={{ left: 4 }}>
-            <Icon name="chevron" />
+            <Icon size="small" name="caretRight" color="muted" />
           </VStack>
-        )}
+        ) : null}
       </HStack>
     </TouchableWithoutFeedback>
   );
 };
-
-ListCell.displayName = 'ListCell';

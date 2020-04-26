@@ -3,11 +3,15 @@
 exports[`Divider default 1`] = `
 <View
   style={
-    Object {
-      "backgroundColor": "#F1F3F5",
-      "height": 1,
-      "width": "100%",
-    }
+    Array [
+      Object {
+        "height": 1,
+        "width": "100%",
+      },
+      Object {
+        "backgroundColor": "#F1F3F5",
+      },
+    ]
   }
 />
 `;

@@ -13,7 +13,7 @@ export const useElevation = (elevation?: ElevationLevels) => {
         ? {
             elevation: elevationLevels[elevation],
           }
-        : {},
+        : undefined,
     [elevation],
   );
 };

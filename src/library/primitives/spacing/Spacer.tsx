@@ -1,17 +1,14 @@
 import React, { FunctionComponent } from 'react';
 import { View, ViewProps, StyleSheet } from 'react-native';
 
-export const Spacer: FunctionComponent<ViewProps> = React.memo(View);
+export const Spacer: FunctionComponent<ViewProps> = (props) => (
+  <View {...props} style={styles.Spacer} />
+);
 
 const styles = StyleSheet.create({
-  spacer: {
+  Spacer: {
     flexGrow: 1,
     flexShrink: 1,
     flexBasis: 'auto',
   },
 });
-
-Spacer.displayName = 'Spacer';
-Spacer.defaultProps = {
-  style: styles.spacer,
-};

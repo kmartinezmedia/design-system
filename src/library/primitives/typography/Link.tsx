@@ -1,10 +1,14 @@
 import React, { FunctionComponent } from 'react';
-
 import { Text, TextProps } from './Text';
 
-export const Link: FunctionComponent<TextProps> = React.memo(Text);
+const Link: FunctionComponent<TextProps> = ({
+  children,
+  color = 'primary',
+  ...textProps
+}) => (
+  <Text color={color} {...textProps}>
+    {children}
+  </Text>
+);
 
-Link.displayName = 'Link';
-Link.defaultProps = {
-  color: 'primary',
-};
+export { Link };

@@ -11,7 +11,7 @@ import { Button, Text, VStack } from '@designSystem';
 
 const { Value, set, useCode } = Animated;
 
-export default function Animation1() {
+export function Animation1() {
   const [show, setShow] = useState(true);
   const opacity = useRef(new Value(0)).current;
   const time = useRef(new Value(0)).current;

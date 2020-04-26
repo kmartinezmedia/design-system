@@ -1,7 +1,7 @@
 import React from 'react';
 import * as DesignSystem from '@designSystem';
 
-export default function Docs() {
+export function Docs() {
   return (
     <>
       {Object.keys(DesignSystem).map((name) => (

@@ -1,58 +1,62 @@
 import React from 'react';
-import { Platform, Text } from 'react-native';
+import { Text, StyleSheet } from 'react-native';
+
 import { useSpacing, useForeground } from '@designSystem/hooks';
 import { SurfaceColorMap, Spacing } from '@designSystem/types';
 
-import { glyphMap } from './glyphMap';
-const FONT_FAMILY = 'CoinbaseIcons';
-const FONT_FILE = '../assets/fonts/CoinbaseIcons.ttf';
+import {
+  glyphMapLarge,
+  glyphMapMedium,
+  glyphMapSmall,
+} from '@designSystem/assets/icons';
 
-type IconName = keyof typeof glyphMap;
-type IconProps<
-  T extends keyof SurfaceColorMap = keyof SurfaceColorMap,
-  C extends SurfaceColorMap[T] = SurfaceColorMap[T]
-> = {
-  name: IconName;
-  size?: number;
-  spacing?: Spacing;
-  surface?: T;
-  color?: C;
-};
+const iconMap = {
+  small: glyphMapSmall,
+  medium: glyphMapMedium,
+  large: glyphMapLarge,
+} as const;
 
-// Heavily inspired by createIconSet in react-native-vector-icons
-// https://github.com/oblador/react-native-vector-icons/blob/master/lib/create-icon-set.js
+type IconSizeNameMap = typeof iconMap;
+
 export const Icon = <
-  T extends keyof SurfaceColorMap,
-  C extends SurfaceColorMap[T]
+  Size extends keyof IconSizeNameMap,
+  Name extends keyof IconSizeNameMap[Size],
+  Surface extends keyof SurfaceColorMap,
+  Color extends SurfaceColorMap[Surface]
 >({
+  size,
   name,
-  size = 32,
   spacing = undefined,
-  surface = 'background' as T,
-  color = 'primary' as C,
-}: IconProps<T, C>) => {
+  surface = 'background' as Surface,
+  color = 'primary' as Color,
+}: {
+  size: Size;
+  name: Name;
+  spacing?: Spacing;
+  surface?: Surface;
+  color?: Color;
+}) => {
   const space = useSpacing(spacing);
   const iconColor = useForeground(surface, color);
 
   return (
-    <Text
-      style={{
-        ...space,
-        fontSize: size,
-        color: iconColor,
-        fontFamily: fontReference,
-      }}
-    >
-      {glyphMap[name]}
+    <Text style={[space, styles[size], { color: iconColor }]}>
+      {iconMap[size][name]}
     </Text>
   );
 };
 
-// Android doesn't care about actual fontFamily name, it will only look in fonts folder.
-const fontBasename = FONT_FILE ? FONT_FILE.replace('.ttf', '') : FONT_FAMILY;
-
-const fontReference = Platform.select({
-  android: fontBasename,
-  web: fontBasename,
-  default: FONT_FAMILY,
+const styles = StyleSheet.create({
+  small: {
+    fontFamily: 'CoinbaseIconsSmall',
+    fontSize: 12,
+  },
+  medium: {
+    fontFamily: 'CoinbaseIconsMedium',
+    fontSize: 16,
+  },
+  large: {
+    fontFamily: 'CoinbaseIconsLarge',
+    fontSize: 32,
+  },
 });

@@ -29,7 +29,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "lint": "yarn eslint src --ext ts,tsx,js"
   },
   "repository": {
     "type": "git",
@@ -93,7 +94,8 @@
     "react-native-redash": "^12.4.2",
     "react-native-safe-area-context": "0.7.3",
     "react-native-screens": "~2.2.0",
-    "react-native-web": "~0.11.7"
+    "react-native-web": "~0.11.7",
+    "react-native-web-linear-gradient": "^1.1.1"
   },
   "lint-staged": {
     "*.js": [

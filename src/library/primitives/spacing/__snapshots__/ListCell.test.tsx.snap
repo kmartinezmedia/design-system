@@ -6,34 +6,47 @@ exports[`ListCell children 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "alignSelf": "auto",
-        "flexDirection": "row",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "paddingHorizontal": 24,
-        "paddingVertical": 16,
-        "width": undefined,
-      }
-    }
-  >
-    <View
-      style={
+      Array [
         Object {
-          "alignItems": "stretch",
+          "alignItems": "center",
           "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "flexDirection": "row",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
           "flexWrap": "nowrap",
           "height": undefined,
           "justifyContent": "flex-start",
           "width": undefined,
-        }
+        },
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -47,16 +60,14 @@ exports[`ListCell children 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "hidden",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {
-              "overflow": "hidden",
-            },
+            undefined,
           ]
         }
       >
@@ -74,17 +85,15 @@ exports[`ListCell children 1`] = `
               "lineHeight": 16,
             },
             Object {
-              "color": "#587088",
-              "lineHeight": 16,
-              "textAlign": undefined,
-            },
-            Object {
               "paddingBottom": 4,
             },
-            Object {},
             Object {
+              "color": "#587088",
+              "lineHeight": 16,
               "overflow": "hidden",
+              "textAlign": undefined,
             },
+            undefined,
           ]
         }
       >
@@ -95,17 +104,23 @@ exports[`ListCell children 1`] = `
     <View
       minWidth="20%"
       style={
-        Object {
-          "alignItems": "flex-end",
-          "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": undefined,
-          "flexShrink": undefined,
-          "flexWrap": "nowrap",
-          "height": undefined,
-          "justifyContent": "flex-start",
-          "width": undefined,
-        }
+        Array [
+          Object {
+            "alignItems": "flex-end",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": undefined,
+            "flexShrink": undefined,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -117,14 +132,14 @@ exports[`ListCell children 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "visible",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {},
+            undefined,
           ]
         }
       >
@@ -140,15 +155,15 @@ exports[`ListCell children 1`] = `
               "lineHeight": 16,
             },
             Object {
-              "color": "#587088",
-              "lineHeight": 16,
-              "textAlign": undefined,
-            },
-            Object {
               "paddingBottom": 4,
             },
-            Object {},
-            Object {},
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "overflow": "visible",
+              "textAlign": undefined,
+            },
+            undefined,
           ]
         }
       >
@@ -165,34 +180,47 @@ exports[`ListCell default 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "alignSelf": "auto",
-        "flexDirection": "row",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "paddingHorizontal": 24,
-        "paddingVertical": 16,
-        "width": undefined,
-      }
-    }
-  >
-    <View
-      style={
+      Array [
         Object {
-          "alignItems": "stretch",
+          "alignItems": "center",
           "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "flexDirection": "row",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
           "flexWrap": "nowrap",
           "height": undefined,
           "justifyContent": "flex-start",
           "width": undefined,
-        }
+        },
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -206,16 +234,14 @@ exports[`ListCell default 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "hidden",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {
-              "overflow": "hidden",
-            },
+            undefined,
           ]
         }
       >
@@ -232,34 +258,47 @@ exports[`ListCell elipsize 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "alignSelf": "auto",
-        "flexDirection": "row",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "paddingHorizontal": 24,
-        "paddingVertical": 16,
-        "width": undefined,
-      }
-    }
-  >
-    <View
-      style={
+      Array [
         Object {
-          "alignItems": "stretch",
+          "alignItems": "center",
           "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "flexDirection": "row",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
           "flexWrap": "nowrap",
           "height": undefined,
           "justifyContent": "flex-start",
           "width": undefined,
-        }
+        },
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -273,16 +312,14 @@ exports[`ListCell elipsize 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "hidden",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {
-              "overflow": "hidden",
-            },
+            undefined,
           ]
         }
       >
@@ -300,17 +337,15 @@ exports[`ListCell elipsize 1`] = `
               "lineHeight": 16,
             },
             Object {
-              "color": "#587088",
-              "lineHeight": 16,
-              "textAlign": undefined,
-            },
-            Object {
               "paddingBottom": 4,
             },
-            Object {},
             Object {
+              "color": "#587088",
+              "lineHeight": 16,
               "overflow": "hidden",
+              "textAlign": undefined,
             },
+            undefined,
           ]
         }
       >
@@ -350,17 +385,23 @@ exports[`ListCell elipsize 1`] = `
     <View
       minWidth="20%"
       style={
-        Object {
-          "alignItems": "flex-end",
-          "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": undefined,
-          "flexShrink": undefined,
-          "flexWrap": "nowrap",
-          "height": undefined,
-          "justifyContent": "flex-start",
-          "width": undefined,
-        }
+        Array [
+          Object {
+            "alignItems": "flex-end",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": undefined,
+            "flexShrink": undefined,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -372,14 +413,14 @@ exports[`ListCell elipsize 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "visible",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {},
+            undefined,
           ]
         }
       >
@@ -395,15 +436,15 @@ exports[`ListCell elipsize 1`] = `
               "lineHeight": 16,
             },
             Object {
-              "color": "#587088",
-              "lineHeight": 16,
-              "textAlign": undefined,
-            },
-            Object {
               "paddingBottom": 4,
             },
-            Object {},
-            Object {},
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "overflow": "visible",
+              "textAlign": undefined,
+            },
+            undefined,
           ]
         }
       >
@@ -420,34 +461,47 @@ exports[`ListCell marker 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "alignSelf": "auto",
-        "flexDirection": "row",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "paddingHorizontal": 24,
-        "paddingVertical": 16,
-        "width": undefined,
-      }
-    }
-  >
-    <View
-      style={
+      Array [
         Object {
-          "alignItems": "stretch",
+          "alignItems": "center",
           "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "flexDirection": "row",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
           "flexWrap": "nowrap",
           "height": undefined,
           "justifyContent": "flex-start",
           "width": undefined,
-        }
+        },
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -461,16 +515,14 @@ exports[`ListCell marker 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "hidden",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {
-              "overflow": "hidden",
-            },
+            undefined,
           ]
         }
       >
@@ -488,17 +540,15 @@ exports[`ListCell marker 1`] = `
               "lineHeight": 16,
             },
             Object {
-              "color": "#587088",
-              "lineHeight": 16,
-              "textAlign": undefined,
-            },
-            Object {
               "paddingBottom": 4,
             },
-            Object {},
             Object {
+              "color": "#587088",
+              "lineHeight": 16,
               "overflow": "hidden",
+              "textAlign": undefined,
             },
+            undefined,
           ]
         }
       >
@@ -508,17 +558,23 @@ exports[`ListCell marker 1`] = `
     <View
       minWidth="20%"
       style={
-        Object {
-          "alignItems": "flex-end",
-          "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": undefined,
-          "flexShrink": undefined,
-          "flexWrap": "nowrap",
-          "height": undefined,
-          "justifyContent": "flex-start",
-          "width": undefined,
-        }
+        Array [
+          Object {
+            "alignItems": "flex-end",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": undefined,
+            "flexShrink": undefined,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -530,14 +586,14 @@ exports[`ListCell marker 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "visible",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {},
+            undefined,
           ]
         }
       >
@@ -553,15 +609,15 @@ exports[`ListCell marker 1`] = `
               "lineHeight": 16,
             },
             Object {
-              "color": "#587088",
-              "lineHeight": 16,
-              "textAlign": undefined,
-            },
-            Object {
               "paddingBottom": 4,
             },
-            Object {},
-            Object {},
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "overflow": "visible",
+              "textAlign": undefined,
+            },
+            undefined,
           ]
         }
       >
@@ -570,30 +626,42 @@ exports[`ListCell marker 1`] = `
     </View>
     <View
       style={
-        Object {
-          "alignItems": "stretch",
-          "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": undefined,
-          "flexShrink": undefined,
-          "flexWrap": "nowrap",
-          "height": undefined,
-          "justifyContent": "flex-start",
-          "paddingLeft": 16,
-          "width": undefined,
-        }
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": undefined,
+            "flexShrink": undefined,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          Object {
+            "paddingLeft": 16,
+          },
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
         style={
-          Object {
-            "color": "#1652F0",
-            "fontFamily": "CoinbaseIcons",
-            "fontSize": 32,
-          }
+          Array [
+            undefined,
+            Object {
+              "fontFamily": "CoinbaseIconsSmall",
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#1652F0",
+            },
+          ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
@@ -606,34 +674,47 @@ exports[`ListCell subtitle 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "alignSelf": "auto",
-        "flexDirection": "row",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "paddingHorizontal": 24,
-        "paddingVertical": 16,
-        "width": undefined,
-      }
-    }
-  >
-    <View
-      style={
+      Array [
         Object {
-          "alignItems": "stretch",
+          "alignItems": "center",
           "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "flexDirection": "row",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
           "flexWrap": "nowrap",
           "height": undefined,
           "justifyContent": "flex-start",
           "width": undefined,
-        }
+        },
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -647,16 +728,14 @@ exports[`ListCell subtitle 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "hidden",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {
-              "overflow": "hidden",
-            },
+            undefined,
           ]
         }
       >
@@ -674,17 +753,15 @@ exports[`ListCell subtitle 1`] = `
               "lineHeight": 16,
             },
             Object {
-              "color": "#587088",
-              "lineHeight": 16,
-              "textAlign": undefined,
-            },
-            Object {
               "paddingBottom": 4,
             },
-            Object {},
             Object {
+              "color": "#587088",
+              "lineHeight": 16,
               "overflow": "hidden",
+              "textAlign": undefined,
             },
+            undefined,
           ]
         }
       >
@@ -701,34 +778,47 @@ exports[`ListCell tertiary 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "alignSelf": "auto",
-        "flexDirection": "row",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "paddingHorizontal": 24,
-        "paddingVertical": 16,
-        "width": undefined,
-      }
-    }
-  >
-    <View
-      style={
+      Array [
         Object {
-          "alignItems": "stretch",
+          "alignItems": "center",
           "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "flexDirection": "row",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
           "flexWrap": "nowrap",
           "height": undefined,
           "justifyContent": "flex-start",
           "width": undefined,
-        }
+        },
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -742,16 +832,14 @@ exports[`ListCell tertiary 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "hidden",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {
-              "overflow": "hidden",
-            },
+            undefined,
           ]
         }
       >
@@ -769,17 +857,15 @@ exports[`ListCell tertiary 1`] = `
               "lineHeight": 16,
             },
             Object {
-              "color": "#587088",
-              "lineHeight": 16,
-              "textAlign": undefined,
-            },
-            Object {
               "paddingBottom": 4,
             },
-            Object {},
             Object {
+              "color": "#587088",
+              "lineHeight": 16,
               "overflow": "hidden",
+              "textAlign": undefined,
             },
+            undefined,
           ]
         }
       >
@@ -789,17 +875,23 @@ exports[`ListCell tertiary 1`] = `
     <View
       minWidth="20%"
       style={
-        Object {
-          "alignItems": "flex-end",
-          "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": undefined,
-          "flexShrink": undefined,
-          "flexWrap": "nowrap",
-          "height": undefined,
-          "justifyContent": "flex-start",
-          "width": undefined,
-        }
+        Array [
+          Object {
+            "alignItems": "flex-end",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": undefined,
+            "flexShrink": undefined,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -811,14 +903,14 @@ exports[`ListCell tertiary 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "visible",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {},
+            undefined,
           ]
         }
       >
@@ -834,15 +926,15 @@ exports[`ListCell tertiary 1`] = `
               "lineHeight": 16,
             },
             Object {
-              "color": "#587088",
-              "lineHeight": 16,
-              "textAlign": undefined,
-            },
-            Object {
               "paddingBottom": 4,
             },
-            Object {},
-            Object {},
+            Object {
+              "color": "#587088",
+              "lineHeight": 16,
+              "overflow": "visible",
+              "textAlign": undefined,
+            },
+            undefined,
           ]
         }
       >
@@ -859,34 +951,47 @@ exports[`ListCell value 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "alignSelf": "auto",
-        "flexDirection": "row",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "paddingHorizontal": 24,
-        "paddingVertical": 16,
-        "width": undefined,
-      }
-    }
-  >
-    <View
-      style={
+      Array [
         Object {
-          "alignItems": "stretch",
+          "alignItems": "center",
           "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "flexDirection": "row",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
           "flexWrap": "nowrap",
           "height": undefined,
           "justifyContent": "flex-start",
           "width": undefined,
-        }
+        },
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -900,16 +1005,14 @@ exports[`ListCell value 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "hidden",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {
-              "overflow": "hidden",
-            },
+            undefined,
           ]
         }
       >
@@ -927,17 +1030,15 @@ exports[`ListCell value 1`] = `
               "lineHeight": 16,
             },
             Object {
-              "color": "#587088",
-              "lineHeight": 16,
-              "textAlign": undefined,
-            },
-            Object {
               "paddingBottom": 4,
             },
-            Object {},
             Object {
+              "color": "#587088",
+              "lineHeight": 16,
               "overflow": "hidden",
+              "textAlign": undefined,
             },
+            undefined,
           ]
         }
       >
@@ -947,17 +1048,23 @@ exports[`ListCell value 1`] = `
     <View
       minWidth="20%"
       style={
-        Object {
-          "alignItems": "flex-end",
-          "alignSelf": "auto",
-          "flexDirection": "column",
-          "flexGrow": undefined,
-          "flexShrink": undefined,
-          "flexWrap": "nowrap",
-          "height": undefined,
-          "justifyContent": "flex-start",
-          "width": undefined,
-        }
+        Array [
+          Object {
+            "alignItems": "flex-end",
+            "alignSelf": "auto",
+            "flexDirection": "column",
+            "flexGrow": undefined,
+            "flexShrink": undefined,
+            "flexWrap": "nowrap",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "width": undefined,
+          },
+          undefined,
+          undefined,
+          undefined,
+          Object {},
+        ]
       }
     >
       <Text
@@ -969,14 +1076,14 @@ exports[`ListCell value 1`] = `
               "fontWeight": "400",
               "lineHeight": 24,
             },
+            undefined,
             Object {
               "color": "#071422",
               "lineHeight": 24,
+              "overflow": "visible",
               "textAlign": undefined,
             },
-            Object {},
-            Object {},
-            Object {},
+            undefined,
           ]
         }
       >
@@ -994,34 +1101,47 @@ Array [
   >
     <View
       style={
-        Object {
-          "alignItems": "center",
-          "alignSelf": "auto",
-          "flexDirection": "row",
-          "flexGrow": undefined,
-          "flexShrink": undefined,
-          "flexWrap": "nowrap",
-          "height": undefined,
-          "justifyContent": "flex-start",
-          "paddingHorizontal": 24,
-          "paddingVertical": 16,
-          "width": undefined,
-        }
-      }
-    >
-      <View
-        style={
+        Array [
           Object {
-            "alignItems": "stretch",
+            "alignItems": "center",
             "alignSelf": "auto",
-            "flexDirection": "column",
-            "flexGrow": 1,
-            "flexShrink": 1,
+            "flexDirection": "row",
+            "flexGrow": undefined,
+            "flexShrink": undefined,
             "flexWrap": "nowrap",
             "height": undefined,
             "justifyContent": "flex-start",
             "width": undefined,
-          }
+          },
+          Object {
+            "paddingHorizontal": 24,
+            "paddingVertical": 16,
+          },
+          undefined,
+          undefined,
+          Object {},
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "stretch",
+              "alignSelf": "auto",
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "flexWrap": "nowrap",
+              "height": undefined,
+              "justifyContent": "flex-start",
+              "width": undefined,
+            },
+            undefined,
+            undefined,
+            undefined,
+            Object {},
+          ]
         }
       >
         <Text
@@ -1035,16 +1155,14 @@ Array [
                 "fontWeight": "400",
                 "lineHeight": 24,
               },
+              undefined,
               Object {
                 "color": "#071422",
                 "lineHeight": 24,
+                "overflow": "hidden",
                 "textAlign": undefined,
               },
-              Object {},
-              Object {},
-              Object {
-                "overflow": "hidden",
-              },
+              undefined,
             ]
           }
         >
@@ -1062,17 +1180,15 @@ Array [
                 "lineHeight": 16,
               },
               Object {
-                "color": "#587088",
-                "lineHeight": 16,
-                "textAlign": undefined,
-              },
-              Object {
                 "paddingBottom": 4,
               },
-              Object {},
               Object {
+                "color": "#587088",
+                "lineHeight": 16,
                 "overflow": "hidden",
+                "textAlign": undefined,
               },
+              undefined,
             ]
           }
         >
@@ -1082,17 +1198,23 @@ Array [
       <View
         minWidth="20%"
         style={
-          Object {
-            "alignItems": "flex-end",
-            "alignSelf": "auto",
-            "flexDirection": "column",
-            "flexGrow": undefined,
-            "flexShrink": undefined,
-            "flexWrap": "nowrap",
-            "height": undefined,
-            "justifyContent": "flex-start",
-            "width": undefined,
-          }
+          Array [
+            Object {
+              "alignItems": "flex-end",
+              "alignSelf": "auto",
+              "flexDirection": "column",
+              "flexGrow": undefined,
+              "flexShrink": undefined,
+              "flexWrap": "nowrap",
+              "height": undefined,
+              "justifyContent": "flex-start",
+              "width": undefined,
+            },
+            undefined,
+            undefined,
+            undefined,
+            Object {},
+          ]
         }
       >
         <Text
@@ -1104,14 +1226,14 @@ Array [
                 "fontWeight": "400",
                 "lineHeight": 24,
               },
+              undefined,
               Object {
                 "color": "#071422",
                 "lineHeight": 24,
+                "overflow": "visible",
                 "textAlign": undefined,
               },
-              Object {},
-              Object {},
-              Object {},
+              undefined,
             ]
           }
         >
@@ -1127,15 +1249,15 @@ Array [
                 "lineHeight": 16,
               },
               Object {
-                "color": "#587088",
-                "lineHeight": 16,
-                "textAlign": undefined,
-              },
-              Object {
                 "paddingBottom": 4,
               },
-              Object {},
-              Object {},
+              Object {
+                "color": "#587088",
+                "lineHeight": 16,
+                "overflow": "visible",
+                "textAlign": undefined,
+              },
+              undefined,
             ]
           }
         >
@@ -1150,34 +1272,47 @@ Array [
   >
     <View
       style={
-        Object {
-          "alignItems": "center",
-          "alignSelf": "auto",
-          "flexDirection": "row",
-          "flexGrow": undefined,
-          "flexShrink": undefined,
-          "flexWrap": "nowrap",
-          "height": undefined,
-          "justifyContent": "flex-start",
-          "paddingHorizontal": 24,
-          "paddingVertical": 16,
-          "width": undefined,
-        }
-      }
-    >
-      <View
-        style={
+        Array [
           Object {
-            "alignItems": "stretch",
+            "alignItems": "center",
             "alignSelf": "auto",
-            "flexDirection": "column",
-            "flexGrow": 1,
-            "flexShrink": 1,
+            "flexDirection": "row",
+            "flexGrow": undefined,
+            "flexShrink": undefined,
             "flexWrap": "nowrap",
             "height": undefined,
             "justifyContent": "flex-start",
             "width": undefined,
-          }
+          },
+          Object {
+            "paddingHorizontal": 24,
+            "paddingVertical": 16,
+          },
+          undefined,
+          undefined,
+          Object {},
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "stretch",
+              "alignSelf": "auto",
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "flexWrap": "nowrap",
+              "height": undefined,
+              "justifyContent": "flex-start",
+              "width": undefined,
+            },
+            undefined,
+            undefined,
+            undefined,
+            Object {},
+          ]
         }
       >
         <Text
@@ -1191,16 +1326,14 @@ Array [
                 "fontWeight": "400",
                 "lineHeight": 24,
               },
+              undefined,
               Object {
                 "color": "#071422",
                 "lineHeight": 24,
+                "overflow": "hidden",
                 "textAlign": undefined,
               },
-              Object {},
-              Object {},
-              Object {
-                "overflow": "hidden",
-              },
+              undefined,
             ]
           }
         >
@@ -1218,17 +1351,15 @@ Array [
                 "lineHeight": 16,
               },
               Object {
-                "color": "#587088",
-                "lineHeight": 16,
-                "textAlign": undefined,
-              },
-              Object {
                 "paddingBottom": 4,
               },
-              Object {},
               Object {
+                "color": "#587088",
+                "lineHeight": 16,
                 "overflow": "hidden",
+                "textAlign": undefined,
               },
+              undefined,
             ]
           }
         >
@@ -1238,17 +1369,23 @@ Array [
       <View
         minWidth="20%"
         style={
-          Object {
-            "alignItems": "flex-end",
-            "alignSelf": "auto",
-            "flexDirection": "column",
-            "flexGrow": undefined,
-            "flexShrink": undefined,
-            "flexWrap": "nowrap",
-            "height": undefined,
-            "justifyContent": "flex-start",
-            "width": undefined,
-          }
+          Array [
+            Object {
+              "alignItems": "flex-end",
+              "alignSelf": "auto",
+              "flexDirection": "column",
+              "flexGrow": undefined,
+              "flexShrink": undefined,
+              "flexWrap": "nowrap",
+              "height": undefined,
+              "justifyContent": "flex-start",
+              "width": undefined,
+            },
+            undefined,
+            undefined,
+            undefined,
+            Object {},
+          ]
         }
       >
         <Text
@@ -1260,14 +1397,14 @@ Array [
                 "fontWeight": "400",
                 "lineHeight": 24,
               },
+              undefined,
               Object {
                 "color": "#071422",
                 "lineHeight": 24,
+                "overflow": "visible",
                 "textAlign": undefined,
               },
-              Object {},
-              Object {},
-              Object {},
+              undefined,
             ]
           }
         >
@@ -1283,15 +1420,15 @@ Array [
                 "lineHeight": 16,
               },
               Object {
-                "color": "#587088",
-                "lineHeight": 16,
-                "textAlign": undefined,
-              },
-              Object {
                 "paddingBottom": 4,
               },
-              Object {},
-              Object {},
+              Object {
+                "color": "#587088",
+                "lineHeight": 16,
+                "overflow": "visible",
+                "textAlign": undefined,
+              },
+              undefined,
             ]
           }
         >
@@ -1300,30 +1437,42 @@ Array [
       </View>
       <View
         style={
-          Object {
-            "alignItems": "stretch",
-            "alignSelf": "auto",
-            "flexDirection": "column",
-            "flexGrow": undefined,
-            "flexShrink": undefined,
-            "flexWrap": "nowrap",
-            "height": undefined,
-            "justifyContent": "flex-start",
-            "paddingLeft": 16,
-            "width": undefined,
-          }
+          Array [
+            Object {
+              "alignItems": "stretch",
+              "alignSelf": "auto",
+              "flexDirection": "column",
+              "flexGrow": undefined,
+              "flexShrink": undefined,
+              "flexWrap": "nowrap",
+              "height": undefined,
+              "justifyContent": "flex-start",
+              "width": undefined,
+            },
+            Object {
+              "paddingLeft": 16,
+            },
+            undefined,
+            undefined,
+            Object {},
+          ]
         }
       >
         <Text
           style={
-            Object {
-              "color": "#1652F0",
-              "fontFamily": "CoinbaseIcons",
-              "fontSize": 32,
-            }
+            Array [
+              undefined,
+              Object {
+                "fontFamily": "CoinbaseIconsSmall",
+                "fontSize": 12,
+              },
+              Object {
+                "color": "#587088",
+              },
+            ]
           }
         >
-          
+          
         </Text>
       </View>
     </View>

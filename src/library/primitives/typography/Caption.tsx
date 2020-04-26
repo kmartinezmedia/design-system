@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { StyleSheet } from 'react-native';
+import { Text, TextProps } from './Text';
 import {
   fontFamily,
   fontSize,
@@ -7,21 +8,22 @@ import {
   fontWeight,
 } from '@designSystem/theme';
 
-import { Text, TextProps } from './Text';
-
-export const Caption: FunctionComponent<TextProps> = React.memo(Text);
+export const Caption: FunctionComponent<TextProps> = ({
+  children,
+  color = 'muted',
+  spacing = { bottom: 1 },
+  ...typeProps
+}) => (
+  <Text {...typeProps} spacing={spacing} color={color} style={styles.Caption}>
+    {children}
+  </Text>
+);
 
 const styles = StyleSheet.create({
-  caption: {
+  Caption: {
     fontFamily: fontFamily.regular,
     fontWeight: fontWeight.regular,
     fontSize: fontSize.caption,
     lineHeight: lineHeight.caption,
   },
 });
-
-Caption.displayName = 'Caption';
-Caption.defaultProps = {
-  spacing: { bottom: 1 },
-  style: styles.caption,
-};

@@ -7,7 +7,7 @@ export const useElevation = (elevation?: ElevationLevels) => {
   const { colors } = useTheme();
 
   if (elevation === undefined) {
-    return {};
+    return undefined;
   }
 
   const styles: { [key in ElevationLevels]: ViewStyle } = {

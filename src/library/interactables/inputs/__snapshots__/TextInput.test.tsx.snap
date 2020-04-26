@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput default 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        undefined,
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "marginBottom": 16,
+            "width": "100%",
+          },
+          Object {
+            "alignItems": "center",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#F1F3F5",
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        autoCapitalize="sentences"
+        autoCorrect={false}
+        keyboardAppearance="light"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onSubmitEditing={[Function]}
+        placeholderTextColor="#587088"
+        rejectResponderTermination={true}
+        returnKeyType="next"
+        style={
+          Array [
+            Object {
+              "borderRadius": 3,
+              "borderStyle": "solid",
+              "flex": 1,
+              "fontSize": 16,
+              "height": 46,
+              "paddingHorizontal": 12,
+              "paddingVertical": 0,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#FFFFFF",
+              "color": "#071422",
+            },
+            undefined,
+          ]
+        }
+        textContentType="none"
+        underlineColorAndroid="transparent"
+      />
+    </View>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        undefined,
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "marginBottom": 16,
+            "width": "100%",
+          },
+          Object {
+            "alignItems": "center",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#00A45F",
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        autoCapitalize="sentences"
+        autoCorrect={false}
+        keyboardAppearance="light"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onSubmitEditing={[Function]}
+        placeholderTextColor="#587088"
+        rejectResponderTermination={true}
+        returnKeyType="next"
+        style={
+          Array [
+            Object {
+              "borderRadius": 3,
+              "borderStyle": "solid",
+              "flex": 1,
+              "fontSize": 16,
+              "height": 46,
+              "paddingHorizontal": 12,
+              "paddingVertical": 0,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#FFFFFF",
+              "color": "#00A45F",
+            },
+            undefined,
+          ]
+        }
+        textContentType="none"
+        underlineColorAndroid="transparent"
+      />
+    </View>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "paddingBottom": 8,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "marginBottom": 4,
+            "width": "100%",
+          },
+          Object {
+            "alignItems": "center",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#F1F3F5",
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        autoCapitalize="sentences"
+        autoCorrect={false}
+        keyboardAppearance="light"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onSubmitEditing={[Function]}
+        placeholderTextColor="#587088"
+        rejectResponderTermination={true}
+        returnKeyType="next"
+        style={
+          Array [
+            Object {
+              "borderRadius": 3,
+              "borderStyle": "solid",
+              "flex": 1,
+              "fontSize": 16,
+              "height": 46,
+              "paddingHorizontal": 12,
+              "paddingVertical": 0,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#FFFFFF",
+              "color": "#071422",
+            },
+            undefined,
+          ]
+        }
+        textContentType="none"
+        underlineColorAndroid="transparent"
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Graphik-Regular",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 16,
+          },
+          Object {
+            "paddingBottom": 4,
+          },
+          Object {
+            "color": "#E5212E",
+            "lineHeight": 16,
+            "overflow": "visible",
+            "textAlign": undefined,
+          },
+          undefined,
+        ]
+      }
+    >
+      you messed up
+    </Text>
+  </View>,
+]
+`;

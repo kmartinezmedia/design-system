@@ -19,7 +19,7 @@ interface AssetLoaderState {
 }
 
 // https://docs.expo.io/versions/v35.0.0/guides/preloading-and-caching-assets/
-const useAssetLoader = (config: Props): AssetLoaderState => {
+export const useAssetLoader = (config: Props): AssetLoaderState => {
   const { images, fonts } = config || {};
   const [isLoadingAssets, setIsLoadingAssets] = useState<boolean>(true);
 
@@ -29,6 +29,7 @@ const useAssetLoader = (config: Props): AssetLoaderState => {
 
   const loadResourcesRequest = useCallback(async () => {
     const requests: any[] = [];
+    console.log(images);
     if (images) {
       requests.push(
         images.map((image) =>
@@ -55,5 +56,3 @@ const useAssetLoader = (config: Props): AssetLoaderState => {
     },
   };
 };
-
-export default useAssetLoader;

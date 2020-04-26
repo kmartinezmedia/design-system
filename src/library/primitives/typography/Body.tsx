@@ -1,27 +1,28 @@
+import React, { FunctionComponent } from 'react';
+import { StyleSheet } from 'react-native';
+import { Text, TextProps } from './Text';
 import {
   fontFamily,
   fontSize,
-  fontWeight,
   lineHeight,
+  fontWeight,
 } from '@designSystem/theme';
-import React, { FunctionComponent } from 'react';
-import { StyleSheet } from 'react-native';
 
-import { Text, TextProps } from './Text';
-
-export const Body: FunctionComponent<TextProps> = Text;
+export const Body: FunctionComponent<TextProps> = ({
+  children,
+  spacing = { bottom: 5 },
+  ...textProps
+}) => (
+  <Text style={styles.Body} spacing={spacing} {...textProps}>
+    {children}
+  </Text>
+);
 
 const styles = StyleSheet.create({
-  body: {
+  Body: {
     fontFamily: fontFamily.regular,
     fontWeight: fontWeight.regular,
     fontSize: fontSize.body,
     lineHeight: lineHeight.body,
   },
 });
-
-Body.displayName = 'Body';
-Body.defaultProps = {
-  spacing: { bottom: 5 },
-  style: styles.body,
-};

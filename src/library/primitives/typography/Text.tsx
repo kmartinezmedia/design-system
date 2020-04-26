@@ -4,7 +4,6 @@ import {
   Text as RNText,
   TextStyle,
   TextProps as RNTextProps,
-  StyleSheet,
 } from 'react-native';
 import { SurfaceColorMap, Spacing } from '@designSystem/types';
 import { debounce } from '@utils/Events';
@@ -40,45 +39,31 @@ export const Text = <
   dangerouslySetStyle,
   ...textProps
 }: React.PropsWithChildren<TextProps<T, C>>) => {
+  const space = useSpacing(spacing);
   const textColor = useForeground(surface, color);
 
   const computedLineHeight =
     lineHeight === undefined ? style?.lineHeight : lineHeight;
 
-  const ellipsizeProps =
-    ellipsize &&
-    (() => {
-      return {
-        numberOfLines: textProps.numberOfLines || 1,
-        ellipsizeMode: ellipsize,
-      };
-    })();
+  const ellipsizeProps = ellipsize && {
+    numberOfLines: textProps.numberOfLines || 1,
+    ellipsizeMode: ellipsize,
+  };
+
+  const styles = {
+    overflow: ellipsize ? 'hidden' : 'visible',
+    color: textColor,
+    textAlign: align,
+    lineHeight: computedLineHeight === 'none' ? undefined : computedLineHeight,
+  };
 
   return (
     <RNText
       onPress={onPress && debounce(onPress)}
-      style={[
-        style,
-        {
-          color: textColor,
-          textAlign: align,
-          lineHeight:
-            computedLineHeight === 'none' ? undefined : computedLineHeight,
-        },
-        ellipsize && styles.withEllipse,
-        useSpacing(spacing),
-        dangerouslySetStyle,
-      ]}
+      style={[style, space, styles, dangerouslySetStyle]}
       {...ellipsizeProps}
-      {...textProps}
-    >
+      {...textProps}>
       {children}
     </RNText>
   );
 };
-
-const styles = StyleSheet.create({
-  withEllipse: {
-    overflow: 'hidden',
-  },
-});

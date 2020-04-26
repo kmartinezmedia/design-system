@@ -3,18 +3,25 @@
 exports[`View dangerouslySetStyle 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "stretch",
-      "alignSelf": "auto",
-      "backgroundColor": "red",
-      "flexDirection": "column",
-      "flexGrow": undefined,
-      "flexShrink": undefined,
-      "flexWrap": "nowrap",
-      "height": undefined,
-      "justifyContent": "flex-start",
-      "width": undefined,
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "width": undefined,
+      },
+      undefined,
+      undefined,
+      undefined,
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
   }
 />
 `;
@@ -22,17 +29,23 @@ exports[`View dangerouslySetStyle 1`] = `
 exports[`View default 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "stretch",
-      "alignSelf": "auto",
-      "flexDirection": "column",
-      "flexGrow": undefined,
-      "flexShrink": undefined,
-      "flexWrap": "nowrap",
-      "height": undefined,
-      "justifyContent": "flex-start",
-      "width": undefined,
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "auto",
+        "flexDirection": "column",
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "flexWrap": "nowrap",
+        "height": undefined,
+        "justifyContent": "flex-start",
+        "width": undefined,
+      },
+      undefined,
+      undefined,
+      undefined,
+      Object {},
+    ]
   }
 />
 `;
@@ -41,50 +54,64 @@ exports[`View elevation 1`] = `
 Array [
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "borderColor": "#F1F3F5",
-        "borderWidth": 1,
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "shadowColor": "#071422",
-        "shadowOffset": Object {
-          "height": 8,
-          "width": 0,
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
         },
-        "shadowOpacity": 0.02,
-        "shadowRadius": 12,
-        "width": undefined,
-      }
+        undefined,
+        undefined,
+        Object {
+          "borderColor": "#F1F3F5",
+          "borderWidth": 1,
+          "shadowColor": "#071422",
+          "shadowOffset": Object {
+            "height": 8,
+            "width": 0,
+          },
+          "shadowOpacity": 0.02,
+          "shadowRadius": 12,
+        },
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "borderColor": "#F1F3F5",
-        "borderWidth": 1,
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "shadowColor": "#071422",
-        "shadowOffset": Object {
-          "height": 8,
-          "width": 0,
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
         },
-        "shadowOpacity": 0.24,
-        "shadowRadius": 40,
-        "width": undefined,
-      }
+        undefined,
+        undefined,
+        Object {
+          "borderColor": "#F1F3F5",
+          "borderWidth": 1,
+          "shadowColor": "#071422",
+          "shadowOffset": Object {
+            "height": 8,
+            "width": 0,
+          },
+          "shadowOpacity": 0.24,
+          "shadowRadius": 40,
+        },
+        Object {},
+      ]
     }
   />,
 ]
@@ -94,78 +121,106 @@ exports[`View pin 1`] = `
 Array [
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "bottom": 0,
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "left": 0,
-        "position": "absolute",
-        "top": 0,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        undefined,
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+        },
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        undefined,
+        Object {
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "bottom": 0,
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        undefined,
+        Object {
+          "bottom": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "bottom": 0,
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        undefined,
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        },
+        undefined,
+        Object {},
+      ]
     }
   />,
 ]
@@ -175,204 +230,287 @@ exports[`View spacing 1`] = `
 Array [
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        undefined,
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "padding": 24,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "padding": 24,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "padding": 0,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "padding": 0,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "padding": 24,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "padding": 24,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "paddingHorizontal": 16,
-        "paddingVertical": 0,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "paddingHorizontal": 16,
+          "paddingVertical": 0,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "marginHorizontal": -16,
-        "paddingBottom": 16,
-        "paddingTop": 0,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "marginHorizontal": -16,
+          "paddingBottom": 16,
+          "paddingTop": 0,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "marginRight": -16,
-        "paddingBottom": 16,
-        "paddingLeft": 16,
-        "paddingTop": 0,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "marginRight": -16,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingTop": 0,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "paddingTop": 16,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "paddingTop": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "paddingHorizontal": 16,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "paddingHorizontal": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "marginBottom": -12,
-        "paddingHorizontal": 16,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "marginBottom": -12,
+          "paddingHorizontal": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "paddingHorizontal": 16,
-        "paddingVertical": 12,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "paddingHorizontal": 16,
+          "paddingVertical": 12,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "alignSelf": "auto",
-        "flexDirection": "column",
-        "flexGrow": undefined,
-        "flexShrink": undefined,
-        "flexWrap": "nowrap",
-        "height": undefined,
-        "justifyContent": "flex-start",
-        "marginRight": -24,
-        "paddingBottom": 12,
-        "paddingLeft": 0,
-        "paddingTop": 16,
-        "width": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "alignSelf": "auto",
+          "flexDirection": "column",
+          "flexGrow": undefined,
+          "flexShrink": undefined,
+          "flexWrap": "nowrap",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "width": undefined,
+        },
+        Object {
+          "marginRight": -24,
+          "paddingBottom": 12,
+          "paddingLeft": 0,
+          "paddingTop": 16,
+        },
+        undefined,
+        undefined,
+        Object {},
+      ]
     }
   />,
 ]

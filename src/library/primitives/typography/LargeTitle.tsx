@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { StyleSheet } from 'react-native';
+import { Text, TextProps } from './Text';
 import {
   fontFamily,
   fontWeight,
@@ -7,21 +8,21 @@ import {
   lineHeight,
 } from '@designSystem/theme';
 
-import { Text, TextProps } from './Text';
-
-export const LargeTitle: FunctionComponent<TextProps> = React.memo(Text);
+export const LargeTitle: FunctionComponent<TextProps> = ({
+  children,
+  spacing = { bottom: 8 },
+  ...textProps
+}) => (
+  <Text style={styles.LargeTitle} spacing={spacing} {...textProps}>
+    {children}
+  </Text>
+);
 
 const styles = StyleSheet.create({
-  largeTitle: {
+  LargeTitle: {
     fontSize: fontSize.largeTitle,
     fontFamily: fontFamily.regular,
     fontWeight: fontWeight.regular,
     lineHeight: lineHeight.largeTitle,
   },
 });
-
-LargeTitle.displayName = 'LargeTitle';
-LargeTitle.defaultProps = {
-  spacing: { bottom: 8 },
-  style: styles.largeTitle,
-};
