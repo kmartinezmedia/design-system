@@ -15,7 +15,8 @@ export function Typography() {
         'Caption',
         'Link',
       ].map((name) => {
-        return <DesignSystem.Body key={name}>{name}</DesignSystem.Body>;
+        const Component = DesignSystem[name];
+        return <Component key={name}>{name}</Component>;
       })}
     </>
   );

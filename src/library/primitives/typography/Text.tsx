@@ -39,6 +39,7 @@ export const Text = <
   dangerouslySetStyle,
   ...textProps
 }: React.PropsWithChildren<TextProps<T, C>>) => {
+  console.log('i re-rendereed');
   const space = useSpacing(spacing);
   const textColor = useForeground(surface, color);
 
@@ -62,7 +63,8 @@ export const Text = <
       onPress={onPress && debounce(onPress)}
       style={[style, space, styles, dangerouslySetStyle]}
       {...ellipsizeProps}
-      {...textProps}>
+      {...textProps}
+    >
       {children}
     </RNText>
   );

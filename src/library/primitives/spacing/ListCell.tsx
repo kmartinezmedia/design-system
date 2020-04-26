@@ -26,6 +26,8 @@ export interface ListCellProps extends Omit<HStackProps, 'onPress'> {
   onPress?: (event: GestureResponderEvent) => void;
 }
 
+const defaultSpacing = { vertical: 4, horizontal: gutter } as const;
+
 export const ListCell: FunctionComponent<ListCellProps> = ({
   ellipsize = 'tail',
   variant = 'static',
@@ -38,7 +40,7 @@ export const ListCell: FunctionComponent<ListCellProps> = ({
   tertiary,
   marker,
   children,
-  spacing = { vertical: 4, horizontal: gutter },
+  spacing = defaultSpacing,
   ...props
 }) => {
   const { tapped } = useAnalytics();
@@ -56,10 +58,12 @@ export const ListCell: FunctionComponent<ListCellProps> = ({
           spacing={icon ? { horizontal: 4 } : 0}
           flexGrow={1}
           flexShrink={1}
-          overflow={ellipsize === 'fade' ? 'gradient' : undefined}>
+          overflow={ellipsize === 'fade' ? 'gradient' : undefined}
+        >
           <Body
             ellipsize={ellipsize === 'fade' ? 'clip' : ellipsize}
-            spacing={0}>
+            spacing={0}
+          >
             {title}
           </Body>
           {subtitle ? (

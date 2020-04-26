@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import { StyleSheet } from 'react-native';
-import { Text, TextProps } from './Text';
 import {
   fontFamily,
   fontSize,
@@ -8,10 +7,14 @@ import {
   fontWeight,
 } from '@designSystem/theme';
 
+import { Text, TextProps } from './Text';
+
+const defaultSpacing = { bottom: 1 } as const;
+
 export const Caption: FunctionComponent<TextProps> = ({
   children,
   color = 'muted',
-  spacing = { bottom: 1 },
+  spacing = defaultSpacing,
   ...typeProps
 }) => (
   <Text {...typeProps} spacing={spacing} color={color} style={styles.Caption}>

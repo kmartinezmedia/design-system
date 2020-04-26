@@ -19,6 +19,8 @@ import {
 import { ButtonVariant } from '@designSystem/types';
 import { useButtonVariant, usePressAnimation } from '@designSystem/hooks';
 
+const defaultSpacing = { bottom: 4 } as const;
+
 export interface ButtonProps extends Omit<ViewProps, 'onPress'> {
   testID?: string;
   variant?: ButtonVariant;
@@ -30,7 +32,7 @@ export interface ButtonProps extends Omit<ViewProps, 'onPress'> {
 
 export const Button: FunctionComponent<ButtonProps> = ({
   variant = 'primary',
-  spacing = { bottom: 4 },
+  spacing = defaultSpacing,
   flexGrow = 0,
   testID,
   children,
@@ -39,7 +41,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
   onPress,
   ...props
 }) => {
-  const variantStyles = useButtonVariant(variant, disabled);
+  const { textColor, ...variantStyles } = useButtonVariant(variant, disabled);
   const [pressIn, pressOut, scale] = usePressAnimation();
 
   return (
@@ -49,7 +51,8 @@ export const Button: FunctionComponent<ButtonProps> = ({
         onPress={onPress}
         onPressIn={pressIn}
         onPressOut={pressOut}
-        disabled={disabled || isLoading}>
+        disabled={disabled || isLoading}
+      >
         <Animated.View
           style={[
             styles.button,
@@ -57,15 +60,14 @@ export const Button: FunctionComponent<ButtonProps> = ({
             variantStyles,
             { transform: [{ scale }] },
           ]}
-          {...props}>
+          {...props}
+        >
           {isLoading ? (
             <RNView style={styles.loading}>
-              <ActivityIndicator size="small" color={variantStyles.textColor} />
+              <ActivityIndicator size="small" color={textColor} />
             </RNView>
           ) : (
-            <Text style={[styles.text, { color: variantStyles.textColor }]}>
-              {children}
-            </Text>
+            <Text style={[styles.text, { color: textColor }]}>{children}</Text>
           )}
         </Animated.View>
       </TouchableWithoutFeedback>

@@ -29,7 +29,6 @@ export const useAssetLoader = (config: Props): AssetLoaderState => {
 
   const loadResourcesRequest = useCallback(async () => {
     const requests: any[] = [];
-    console.log(images);
     if (images) {
       requests.push(
         images.map((image) =>

@@ -17,6 +17,8 @@ import {
 import LinearGradient from 'react-native-linear-gradient';
 import { useTheme } from '@designSystem/theme';
 
+const defaultDangerouslySetStyle = {};
+
 export interface ViewProps
   extends Omit<RNViewProps, 'style'>,
     Pick<
@@ -51,7 +53,7 @@ export const View: FunctionComponent<ViewProps> = ({
   alignItems = 'stretch',
   alignSelf = 'auto',
   spacing = 0,
-  dangerouslySetStyle = {},
+  dangerouslySetStyle = defaultDangerouslySetStyle,
   flexGrow,
   flexShrink,
   height,
@@ -90,7 +92,8 @@ export const View: FunctionComponent<ViewProps> = ({
         elevationStyles,
         dangerouslySetStyle,
       ]}
-      {...props}>
+      {...props}
+    >
       {children}
       {overflow === 'gradient' ? (
         <LinearGradient

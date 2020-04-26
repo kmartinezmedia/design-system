@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import { StyleSheet } from 'react-native';
-import { Text, TextProps } from './Text';
 import {
   fontFamily,
   fontWeight,
@@ -8,9 +7,13 @@ import {
   lineHeight,
 } from '@designSystem/theme';
 
+import { Text, TextProps } from './Text';
+
+const defaultSpacing = { bottom: 8 } as const;
+
 export const LargeTitle: FunctionComponent<TextProps> = ({
   children,
-  spacing = { bottom: 8 },
+  spacing = defaultSpacing,
   ...textProps
 }) => (
   <Text style={styles.LargeTitle} spacing={spacing} {...textProps}>

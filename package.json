@@ -109,10 +109,6 @@
     "*.tsx": [
       "eslint --fix --ext .tsx",
       "git add"
-    ],
-    "*.{json,md}": [
-      "prettier --write",
-      "git add"
     ]
   },
   "husky": {

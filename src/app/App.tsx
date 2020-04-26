@@ -1,16 +1,12 @@
-ignoreWarnings();
-
 import React from 'react';
 import { registerRootComponent, AppLoading } from 'expo';
-import { VStack, ThemeProvider, Screen } from '@designSystem';
+import { VStack, ThemeProvider, Screen, Button } from '@designSystem';
 import { useAssetLoader } from '@app/hooks';
 import { fonts } from '@designSystem/assets';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { Animation1, Counter, Docs } from '@app/screens';
-import { initPerf, ignoreWarnings } from '@app/utils';
 import { ScrollView } from 'react-native-gesture-handler';
 
-initPerf(false);
+console.disableYellowBox = true;
 
 const App = () => {
   const { isLoadingAssets, ...callbackFns } = useAssetLoader({
@@ -27,12 +23,10 @@ const App = () => {
 const AppContent = () => {
   return (
     <ScrollView>
-      <Screen>
+      <Screen spacing={{ top: 10 }}>
         <VStack>
           <ThemeProvider>
-            <Animation1 />
-            <Counter />
-            <Docs />
+            <Button>Button</Button>
           </ThemeProvider>
         </VStack>
       </Screen>

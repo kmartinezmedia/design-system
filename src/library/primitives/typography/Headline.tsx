@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import { StyleSheet } from 'react-native';
-import { Text, TextProps } from './Text';
 import {
   fontFamily,
   fontSize,
@@ -8,9 +7,13 @@ import {
   fontWeight,
 } from '@designSystem/theme';
 
+import { Text, TextProps } from './Text';
+
+const defaultSpacing = { bottom: 5 } as const;
+
 export const Headline: FunctionComponent<TextProps> = ({
   children,
-  spacing = { bottom: 5 },
+  spacing = defaultSpacing,
   ...textProps
 }) => (
   <Text style={styles.Headline} spacing={spacing} {...textProps}>
