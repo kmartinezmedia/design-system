@@ -7,8 +7,14 @@ const generateExportNames = async ({ files, defaults, wildcard, requires }) => {
   const filteredFiles = files
     .filter((file) => !startsWith(file, '.'))
     .filter((file) => !file.includes('index'))
-    .filter((file) => file !== '');
-  const firstLine = requires ? `module.exports = {\n` : '';
+    .filter((file) => file !== '')
+    .filter((file) => !file.includes('.test.'))
+    .filter((file) => !file.includes('.android.'))
+    .filter((file) => !file.includes('.ios.'))
+    .filter((file) => !file.includes('.d.'))
+    .filter((file) => !file.includes('__snapshots__'))
+    .filter((file) => !file.includes('.png'));
+  const firstLine = requires ? `export default {\n` : '';
   const lastLine = +requires ? '\n}' : '';
   return (
     firstLine +
@@ -49,7 +55,10 @@ const getContents = async ({
   let fileNames = [];
   await fs.readdirSync(dir).forEach(async (item) => {
     const contentPath = path.join(dir, item);
-    if (fs.statSync(contentPath).isDirectory()) {
+    if (
+      fs.statSync(contentPath).isDirectory() &&
+      !contentPath.includes('__snapshots__')
+    ) {
       getContents({
         dir: contentPath,
         defaults,
@@ -67,8 +76,9 @@ const getContents = async ({
     wildcard,
     requires,
   });
+  if (!fileContents) return;
   await fs.writeFileSync(
-    path.join(dir, 'index.ts'),
+    path.join(dir, requires ? 'index.js' : 'index.ts'),
     prettier.format(fileContents, {
       parser: 'babel',
       singleQuote: true,
@@ -100,3 +110,10 @@ const generateExports = async ({
 generateExports({ dir: 'src/app/utils', wildcard: true });
 generateExports({ dir: 'src/app/screens', wildcard: true });
 generateExports({ dir: 'src/app/hooks', wildcard: true });
+generateExports({ dir: 'src/library/assets/fonts', requires: true });
+
+generateExports({ dir: 'src/library/hooks', wildcard: true });
+generateExports({ dir: 'src/library/interactables', wildcard: true });
+generateExports({ dir: 'src/library/primitives', wildcard: true });
+generateExports({ dir: 'src/library/theme', wildcard: true });
+generateExports({ dir: 'src/library/utils', wildcard: true });

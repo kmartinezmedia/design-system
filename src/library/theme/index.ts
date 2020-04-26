@@ -1,13 +1,8 @@
-// Theme constants
+export * from './animations';
 export * from './border';
-export * from './palette';
+export * from './context';
 export * from './elevation';
+export * from './palette';
 export * from './sizing';
 export * from './spacing';
 export * from './typography';
-export * from './animations';
-
-// Theme contexts
-export * from '@designSystem/theme/context/default';
-export * from '@designSystem/theme/context/inverse';
-export * from '@designSystem/theme/context/brand';
